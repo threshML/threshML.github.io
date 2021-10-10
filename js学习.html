@@ -1,0 +1,2892 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js学习</title>
+    <link rel="stylesheet" href="../../bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/js学习.css">
+</head>
+
+<body>
+    <!-- 头部导航栏 -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="#">JS学习</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <!-- 第一部分 -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle page_btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">第一部分 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="#1">1.编程语言</a></li>
+                            <li><a href="#2">2.计算机基础</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#3">3.JS基础运算</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#4">4.JS流程控制</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#5">5.JS函数</a></li>
+                        </ul>
+                    </li>
+                    <!-- 第二部分 -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle page_btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">第二部分 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="#6">6.DOM操作</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#7">7.BOM操作</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#8">8. jquery学习</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#9">9. ES6语法</a></li>
+
+                        </ul>
+                    </li>
+
+                    <!-- 第三部分 -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle page_btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">第三部分 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="#10">10.AJAX</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#11">11.promise</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#12">12.vue框架</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="搜索关键词" id='search'>
+                    </div>
+                    <button type="submit" class="btn btn-default" id="search_btn">查询</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a id="wenhou"></a>
+                    </li>
+                    <li><a href="../html/html案例/登录表单.html">返回登录</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../html/html学习.html">html学习</a></li>
+                            <li><a href="../html/css学习1.html">css学习1</a></li>
+                            <li><a href="../html/css学习2.html">css学习2</a></li>
+                            <li><a href="../html/js练习/js练习1.html">js练习1</a></li>
+                            <li><a href="../html/js练习/js练习2.html">js练习2</a></li>
+
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">更多</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse
+            </div>
+            /.container-fluid -->
+    </nav>
+    <!-- 头部导航栏 -->
+
+    <!-- 主体部分 -->
+    <div class="main">
+        <!-- 设置版心 -->
+        <div class="container">
+            <!-- demo板块部分 -->
+            <!-- <div id="1" class="content">
+                <h2>1.编程语言</h2>
+                <ul>
+                   
+                    <li>
+                        <h4>1.1编程</h4>
+                    </li>
+                   
+
+                </ul>
+            </div> -->
+            <!-- demo板块部分 -->
+
+            <!-- demo小模块 -->
+            <!-- <li>
+                <h4>1.1编程</h4>
+            </li> -->
+            <!-- demo小模块 -->
+
+
+            <!-- page1 -->
+            <div id="page1" class="page">
+                <!-- 第一部分 -->
+                <div id="1" class="content">
+                    <h2>编程语言</h2>
+                    <ul>
+                        <!-- 1.1板块 -->
+                        <li>
+                            <h4>1.1编程</h4>
+                        </li>
+                        <!-- 1.1板块 -->
+
+                        <!-- 1.2板块 -->
+                        <li>
+                            <h4>1.2计算机语言</h4>
+                            <p>计算机语言种类非常多，总体分成机器语言、汇编语言和高级语言</p>
+                            <p>计算机执行的都是机器语言，2进制语言是计算机语言的基础</p>
+                        </li>
+                        <!-- 1.2板块 -->
+
+                        <!-- 1.3板块 -->
+                        <li>
+                            <h4>1.3编程语言</h4>
+                            <p>编程语言是控制计算机的一系列指令</p>
+                            <p>如今通用的编程语言有两种形式：<span class="red">汇编语言</span>和<span class="red">高级语言</span></p>
+                            <p><span>汇编语言</span>和机器语言实质相同，都是对硬件的操作，采用了英文缩写和标识符</p>
+                            <p><span>高级语言</span>并不特指某一种语言，而是包括了很多编程语言，例如C语言、C++、Java、JavaScript等</p>
+                        </li>
+                        <!-- 1.3板块 -->
+                        <!-- 1.4板块 -->
+                        <li>
+                            <h4>1.4编程语言和标记语言的区别</h4>
+                            <p>编程语言相较与标记语言来说具有更强的逻辑性和行为能力</p>
+                        </li>
+                        <!-- 1.4板块 -->
+
+                    </ul>
+                </div>
+                <!-- 第一部分 -->
+
+                <!-- 第二部分 -->
+                <div id="2" class="content">
+                    <h2>计算机基础</h2>
+                    <ul>
+                        <!-- 2.1板块 -->
+                        <li>
+                            <h4>2.1计算机组成</h4>
+                            <p>计算机由软件和硬件组成</p>
+                        </li>
+                        <!-- 2.1板块 -->
+
+                        <!-- 2.2板块 -->
+                        <li>
+                            <h4>2.2数据储存</h4>
+                            <p>1.计算机内部使用二进制0和1来表示数据</p>
+                            <p>2.所有数据，包括文件、图片等最终都是以二进制数据的形式储存在硬盘中的</p>
+                            <p>3.所有程序，包括操作系统，本质都是各种数据，也是以二进制数据的形式存放在硬盘中，平时我们说的安装软件，其实就是把程序文件复制到硬盘中</p>
+                        </li>
+                        <!-- 2.2板块 -->
+
+                        <!-- 2.3模块 -->
+                        <li>
+                            <h4>2.3编程</h4>
+                            <p>数据储存单位</p>
+                            <p>TB>GB>KB>byte>bit</p>
+                        </li>
+                        <!-- 2.3模块 -->
+
+                        <!-- 2.4模块 -->
+                        <li>
+                            <h4>2.4程序运行</h4>
+                            <p>打开某个程序的时候，先从硬盘中把程序的代码加载到内存中</p>
+                            <p>CPU执行内存中的代码</p>
+                        </li>
+                        <!-- 2.4模块 -->
+
+                    </ul>
+                </div>
+                <!-- 第二部分 -->
+
+                <!-- 第三部分 -->
+                <div id="3" class="content">
+                    <h2>JavaScript基础运算</h2>
+                    <ul>
+                        <!-- 3.1板块 -->
+                        <li>
+                            <h4>3.1 初认JavaScript</h4>
+                            <p>布兰登·艾奇在1995年利用10天完成</p>
+                            <p>是运行在客户端的脚本语言</p>
+                            <p>不需要编译，运行中由js解释器逐行进行解释并执行</p>
+                            <p class="red">HTML/CSS/JS的关系：html和css为标记语言-描述类语言，js为脚本语言-编程类语言</p>
+                            <p>浏览器分为两部分
+                                <dl>
+                                    <dt class="red">渲染引擎：</dt>
+                                    <dd>用来解析HTML和css，俗称内核，比如谷歌浏览器的blink，和老版本的webkit</dd>
+                                    <dt class="red">js引擎：</dt>
+                                    <dd>也称js解释器，用来读取网页中的js代码，对其进行处理后运行，比如谷歌浏览器的V8</dd>
+                                </dl>
+                            </p>
+                        </li>
+                        <!-- 3.1板块 -->
+
+                        <!-- 3.2模块 -->
+                        <li>
+                            <h4>3.2 js的基础</h4>
+                            <p>JS由三部分组成</p>
+                            <div class="js_a">
+                                <div class="js_aa col-lg-4">
+                                    <div class="js_pic">ECMAScript</div>
+                                    <p>js语法</p>
+                                    <p>ES5和ES6</p>
+                                </div>
+                                <div class="js_aa  col-lg-4">
+                                    <div class="js_pic">DOM</div>
+                                    <p>页面文档对象模型</p>
+                                    <p>对页面的各种元素进行操作（大小、位置、颜色等）</p>
+                                </div>
+                                <div class="js_aa  col-lg-4">
+                                    <div class="js_pic">BOM</div>
+                                    <p>浏览器对象模型</p>
+                                    <p>可以操作浏览器的窗口，比如弹出框、控制浏览器跳转、获取分辨率等</p>
+                                </div>
+                            </div>
+
+                            <h4>js的三种写法</h4>
+                            <p>行内：在行内调用<input type="button" value="点击显示" onclick="alert('HELLO WORLD')" class="btn btn-success ">JS中推荐使用单引号</p>
+                            <p>内嵌：在body底部的&lt;script&gt;标签内写</p>
+                            <p>外链：外链接js样式表在&lt;script&gt;用src调用</p>
+
+                            <h4>JS 注释</h4>
+                            <p>单行注释// 快捷键 ctrl + /</p>
+                            <p>单行注释/* */ 快捷键 shift + alt + a </p>
+
+                            <h4>输入输出语句</h4>
+                            <div class="table-responsive">
+                                <table class="table table-hover table-bordered">
+                                    <tr>
+                                        <td>方法</td>
+                                        <td>说明</td>
+                                        <td>归属</td>
+                                    </tr>
+                                    <tr>
+                                        <td>alert（msg）</td>
+                                        <td>浏览器弹出警示框</td>
+                                        <td>浏览器</td>
+                                    </tr>
+                                    <tr>
+                                        <td>console.log(msg)</td>
+                                        <td>浏览器控制台打印输出信息</td>
+                                        <td>浏览器</td>
+                                    </tr>
+                                    <tr>
+                                        <td>prompt（info）</td>
+                                        <td>浏览器弹出输入框，用户可以输入</td>
+                                        <td>浏览器</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <h4>变量</h4>
+                            <p>用来存储变量的容器</p>
+                            <p>声明变量var，var 变量名</p>
+                            <button class="btn" id="myname" onclick="prompt('请输入您的名字')">点击出现输入框</button>
+                            <button class="btn btn-danger" onclick="alert(myname)">点击出现警告</button>
+                            <p></p>
+                            <h4>变量命名规范</h4>
+                            <p>由字母（A-Z,a-z）数字（0-9）下划线，美元符号组成</p>
+                            <p>不能以数字开头，尽量以驼峰命名法命名，首字母小写，后面每个单词的首字母大写</p>
+                            <p>命名中不能出现空格</p>
+                        </li>
+                        <!-- 3.2模块 -->
+
+                        <!-- 3.3模块 -->
+                        <li>
+                            <h4>3.3数据类型</h4>
+                            <p>js是动态语言，变量的类型是可以转变的</p>
+                            <p>数据类型分为两类：
+                                <dl>
+                                    <dt>简单数据类型</dt>
+                                    <dd>（Number,String,Boolean,Underfined,Null）</dd>
+                                    <dt>复杂数据类型</dt>
+                                    <dd>（object）</dd>
+                                </dl>
+                            </p>
+                            <p>数字型中有不同的进制</p>
+                            <p>八进制是以0开头的，例如var num=010，就是八进制的数字，但是输出的是十进制也就是8</p>
+                            <p>十进制是以0x开头的</p>
+                            <p>JS中的最大值：（Number.MAX_VALUE）</p>
+                            <p>JS中的最小值：（Number.MIN_VALUE）</p>
+                            <p>无穷大：（Infinity）大于任何数值</p>
+                            <p>无穷小：（-Infinity）小于任何数值</p>
+                            <p>代表一个非数值：（NaN）</p>
+                            <p>isNaN()是一个判断的方法，判断是否为非数字型，如果是数字则返回false</p>
+                            <p>字符串型，需要单引号嵌套双引号</p>
+                            <p>字符串型需要有转义符号，转义符以\开头</p>
+
+                            <p class="red">字符串的长度.length,可以显示出字符串型的长度</p>
+                            <p>字符串拼接 +，<span class="red">字符串和其他类型拼接后的结果都为字符串</span></p>
+                            <p>同为数字型拼接后结果是数字型</p>
+                            <p class="red">布尔型和数字型相加的时候，true为1，false为0</p>
+                            <p>undefined和数字型相加为<span class="red">NaN</span></p>
+                            <P>typeof可以变量的类型，<span class="red">null值的显示为object</span></P>
+                            <p>字符串类型转换：</p>
+                            <div>
+                                <p>toString（）</p>
+                                <p>String(变量名)强制类型转换</p>
+                                <p>拼接字符串，+一个字符串</p>
+                            </div>
+
+                            <p>数字型转换：</p>
+                            <div>
+                                <p>parseInt（string）函数，转为整数数值型</p>
+                                <p>parseFloat（string）函数，转为浮点数值型</p>
+                                <p>Number（string），强制类型转换为数值型</p>
+                                <p>js隐式转换（- * /）,利用算术运算符，"12"-0</p>
+                                <table class="table table-striped table-bordered table-hover">
+                                    <tr>
+                                        <th>转义符</th>
+                                        <th>解释说明</th>
+                                    </tr>
+                                    <tr>
+                                        <td>\n</td>
+                                        <td>换行,newline的意思</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>\\</td>
+                                        <td>斜杠\</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\'</td>
+                                        <td>单引号'</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\"</td>
+                                        <td>双引号"</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\t</td>
+                                        <td>tap缩进</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\b</td>
+                                        <td>空格，b是blank的意思</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <p>布尔型转换：</p>
+                            <p>Boolean（）强制类型转换，空值或者否定值会转为false（''、0、NaN、null、undefined），其余值都是true</p>
+                        </li>
+                        <!-- 3.3模块 -->
+
+                        <!-- 3.4模块 -->
+                        <li>
+                            <h4>3.4运算符</h4>
+                            <p><b>算数运算符</b></p>
+                            <p>+加，-减，*乘，/除，%取余数</p>
+                            <p>浮点数直接运算容易出问题，且比较相等时也会不相等</p>
+                            <p>前置递增递减运算符++num，--num，先加一（减一）再返回值</p>
+                            <p>后置递增递减运算符num++，num--，后置自增是先返回原值再自加</p>
+                            <p class="red">两者区别：后置使用后自加，前置是使用前自加</p>
+                            <p><b>比较运算符</b></p>
+                            <p>&lt;小于，&gt;大于，&gt;=大于等于，&lt;=小于等于，==判断等号（会自动转为数字型），！=不等号，===全等号，要求值和数据类型都一致</p>
+                            <p>比较结果返回布尔值</p>
+                            <p><b>逻辑运算符</b></p>
+                            <p>又称布尔运算符，&&and和，||or或者，！not非</p>
+                            <p class="red">&&一假全假，||一真全真</p>
+                            <p>如果有多个表达式，左边的表达式可以确定结果时，不在运行右边的表达式</p>
+                            <p>&&遇到假就返回值</p>
+                            <p>||遇到真就返回值</p>
+                            <p>例如（123||0++）左边可以确定结果为真，直接返回值，所以右边不再执行，还是0</p>
+                            <p><b>赋值运算符</b></p>
+                            <p>=直接赋值，+=加一个数后赋值，-=减一个数再赋值，*=乘一个数后再赋值</p>
+                            <p><b>运算优先级</b></p>
+
+                            <table class="table table-striped table-bordered table-hover">
+                                <tr>
+                                    <th>优先级</th>
+                                    <th>运算符</th>
+                                    <th>顺序</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>小括号</td>
+                                    <td>（）</td>
+
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>一元运算符</td>
+                                    <td>++，--，！</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>算数运算符</td>
+                                    <td class="red">先*/%,后+-</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>关系运算符</td>
+                                    <td>>=, &lt;=,>, &lt;</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>相等运算符</td>
+                                    <td>==,!=,===,!==</td>
+
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>逻辑运算符</td>
+                                    <td class="red">先&&再||</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>赋值运算符</td>
+                                    <td>=</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>逗号运算符</td>
+                                    <td>，</td>
+                                </tr>
+                            </table>
+
+                        </li>
+                        <!-- 3.4模块 -->
+
+
+                    </ul>
+                </div>
+                <!-- 第三部分 -->
+
+                <!-- 第四部分 -->
+                <div id="4" class="content">
+                    <h2>JS流程控制</h2>
+                    <ul>
+                        <!-- 4.1模块 -->
+                        <li>
+                            <h4>4.1分支</h4>
+                            <p><b>if分支</b></p>
+                            <p>if（条件表达式）{执行语句}条件表达式为真时，才会执行执行语句</p>
+                            <p>如果后面有else{执行语句}，if中的条件表达式为假时，直接执行else中的语句</p>
+                            <p>多分支就是再多加else if（条件表达式）{执行语句}</p>
+                            <p><b>三元表达式</b></p>
+                            <p>条件表达式？表达式1：表达式2，条件表达式为真，返回表达式1，为假，返回表达式2</p>
+                            <p><b>switch分支</b></p>
+                            <P>switch(表达式){ case 表达式值：执行语句；break；case 表达式值：执行语句；break……default：执行语句 }</P>
+                            <p>没有break则会继续执行后面的语句</p>
+                            <p>两者区别，switch确定值的语句更合适，判断范围if else更合适</p>
+                            <p>但是switch是直接跳转到该case值的语句，效率更高</p>
+                        </li>
+                        <!-- 4.1模块 -->
+
+                        <!-- 4.2模块 -->
+                        <li>
+                            <h4>4.2循环</h4>
+                            <p><b>for循环</b></p>
+                            <p>for（var 设定变量；条件语句；操作表达式（计数器更新））{循环体}</p>
+                            <p>例如for(var i =1;i &lt;5;i++){console.log( '这是执行的第'+i+ '次')}</p>
+                            <p>测试断点，f12--》sources--》f11（下一步）</p>
+
+                            <p><b>while循环</b></p>
+                            <p>
+                                while(条件表达式){ 循环体 ；i++； }
+                            </p>
+                            <p>
+                                do{循环体}while（条件表达式）
+                            </p>
+                            <p>do while先执行再判断，while先判断再执行，do while至少会执行一次</p>
+                            <p><b>continue和break</b></p>
+                            <p>continue跳出当前循环，执行下一个循环</p>
+                            <p>break直接结束循环</p>
+                        </li>
+                        <!-- 4.2模块 -->
+
+                        <!-- 4.3模块 -->
+                        <li>
+                            <h4>4.3数组array</h4>
+                            <p>数组是一组数据的集合，可以存储在单个变量下</p>
+                            <p>利用new关键字创建：var 数组名 =new Array()</p>
+                            <p>()中一个数表示数组长度，里面为空值，()中两个数以上就是赋值数组元素，中间用逗号隔开</p>
+                            <p>利用数组字面量创建数组：var 数组名=[]</p>
+                            <P>利用索引号来访问数组元素，数组名[索引下标]</P>
+                            <p class="red">索引下标从0开始</p>
+                            <p>遍历数组</p>
+                            <p>用循环把数组中的值都读出来，数组长度也可以用.length来数</p>
+                            <p class="red">console.log(a,b,c)一行输出多个值用，隔开</p>
+                            <p>可以用.length增加数组长度，多出来的空值用undefined占位</p>
+                            <p>用修改索引号，追加数组元素</p>
+                        </li>
+                        <!-- 4.3模块 -->
+
+                        <!-- 4.4模块 -->
+                        <li>
+                            <h4>4.4冒泡排序</h4>
+                            <p>需要内循环和外循环</p>
+                            <p>外循环统计总趟数，一般是n个数要n-1趟</p>
+                            <p>内循环则比较，j和j+1进行比较，j一般小于等于n-1再减去i</p>
+                            <p><img src="../img/函数封装冒泡.png" alt=""></p>
+                        </li>
+                        <!-- 4.4模块 -->
+
+
+                    </ul>
+                </div>
+                <!-- 第四部分 -->
+
+
+                <!-- 第五部分 -->
+                <div id="5" class="content">
+                    <h2>JS函数</h2>
+                    <ul>
+
+                        <!-- 5.1模块 -->
+                        <li>
+                            <h4>5.1 函数写法</h4>
+                            <p>声明函数fuction 函数名（）{函数体}</p>
+                            <p>调用函数，函数名（）</p>
+                            <p>返回值用return返回</p>
+                            <p class="red">形参和实参个数不匹配：</p>
+                            <p>实参多于形参，会按前几个实参，带入形参计算</p>
+                            <p>实参小于形参，剩余形参会为undefined，和数字进行计算时会返回NaN</p>
+                            <p>return后会终止函数，并且只能返回一个值，多个值可以用数组,没有return会返回undefined</p>
+                            <p class="red">arguments可以获取所有的实参</p>
+                            <p><img src="../img/arguments取任意个数最大值.png" alt=""></p>
+                            <p>arguments的展示形式是一个伪数组</p>
+                            <p>1.具有数组的.length属性</p>
+                            <p>2.按照索引的方式进行存储</p>
+                            <p>3.没有真正数组的一些方法：pop（） push（）等</p>
+                            <p class="red">只有函数才有arguments对象，且每个函数都内置好了arguments</p>
+                            <p>函数表达式：var 变量名 = function （）{}，调用时直接调用变量名（）；，该函数是匿名函数</p>
+                        </li>
+                        <!-- 5.1模块 -->
+
+                        <!-- 5.2模块 -->
+                        <li>
+                            <h4>5.2 JS作用域</h4>
+                            <p>全局作用域和局部作用域</p>
+                            <p>全局：在整个script标签，或者一个单独的js文件中起作用</p>
+                            <p>局部：当前函数内部起作用</p>
+                            <p>特殊情况：在函数内不var声明，直接赋值也会变成全局变量</p>
+                            <p>块级作用域，在es6中，{}中的作用域，{}外无法调用</p>
+                            <p>作用域链：就近原则</p>
+                        </li>
+                        <!-- 5.2模块 -->
+
+                        <!-- 5.3模块 -->
+                        <li>
+                            <h4>5.3 JS预解析</h4>
+                            <p>js引擎运行分为两步：预解析 代码执行</p>
+                            <p>1.预解析会将js里所有的var和function提升到当前作用域的最前面</p>
+                            <p>2.按照代码书写顺序从上往下执行</p>
+                            <p>（1）变量提升（变量预解析）：将变量声明提升到当前作用域的最前面，不提升赋值操作</p>
+                            <p>（2）函数提升（函数预解析）：将函数声明提升到当前作用域最前面</p>
+                            <p> 例如：console.log(num)；<br>var num = 10;//得到undefined，因为变量声明得到提升，但是赋值操作没有提升</p>
+                            <p>fun（）；<br>var fun = function（）{console.log（22）}//同样报错，因为声明了变量提升了，但是函数的赋值没有提升，所有fun（）没有定义</p>
+                            <p><img src="../img/预解析案例.png" alt=""></p>
+                        </li>
+                        <!-- 5.3模块 -->
+
+                        <!-- 5.4模块 -->
+                        <li>
+                            <h4>5.4 JS对象</h4>
+                            <p>对象是一个具体的事物</p>
+                            <p>属性：事物的特征，在对象中用属性来表示（常用名词）</p>
+                            <p>方法：事物的行为，在对象中用方法来表示（常用动词）</p>
+                            <p class="red">对象（object）</p>
+                            <p>1.利用字面量创建对象</p>
+                            <p> var 对象名 = {uname：属性值，age：属性值，sex：属性值}</p>
+                            <p class="red">多个属性之间用，隔开。<br>在对象中添加方法（函数）时，方法冒号后面是匿名函数，方法名 ：function（）{}</p>
+                            <p>调用对象属性：对象名.属性名 或者 对象名['属性名']</p>
+                            <p>调用对象方法：对象名.方法名（）不能忘记添加小括号</p>
+
+
+                            <p>2.利用new Object创建对象</p>
+                            <p>var obj = new Object（）；</p>
+                            <p> obj.uname = 'luojing';</p>
+                            <p> obj.sayhi = function（）{}</p>
+                            <p class="red"> o要大写</p>
+                            <p>3.利用构造函数创建对象</p>
+                            <p>function 构造函数名（）{
+                                <br>this.属性名 = 属性值,
+                                <br>this.方法名 = function（）{}
+                                <br>}</p>
+                            <p>new 构造函数名（）;</p>
+                            <p class="red">构造函数名首字母要大写,var调用构造函数的时候要加new</p>
+                            <p><img src="../img/构造函数创建对象.png" alt=""></p>
+                            <p>利用构造函数来创建对象的过程，称为实例化对象</p>
+                            <p>new关键字执行的四个步骤</p>
+                            <p>1.new一个新的对象</p>
+                            <p>2.this值指向刚才的新对象</p>
+                            <p>3.执行对应的赋值操作，给这个新对象添加属性和方法</p>
+                            <p>返回这个对象（因此不用写return）</p>
+                            <p>遍历对象for（var 变量名 in 对象名 ）{}</p>
+                            <p>一般变量名设置为k或者key</p>
+                            <p> <img src="../img/遍历对象.png" alt=""></p>
+
+                        </li>
+                        <!-- 5.4模块 -->
+
+                        <!-- 5.5模块 -->
+                        <li>
+                            <h4>5.5内置对象</h4>
+                            <p>MDN，可以查询内置对象</p>
+                            <p>MDN，可以查询内置对象</p>
+                            <p><b>Math对象</b></p>
+                            <P>1.取绝对值Math.abs（）</P>
+                            <p>2.取整数：Math.floor()向下取整</p>
+                            <p>Math.ceil()向上取整</p>
+                            <p>Math.round()四舍五入，负数中0.5也往大取，-1.5取-1</p>
+                            <p>3.随机数：Math.random()</p>
+                            <p>取值在[0,1)</p>
+                            <p>Math.floor(Math.random * (max - min + 1) + min)</p>
+
+
+                            <p><b>Date对象</b></p>
+                            <p>是一个构造函数，要用new来创建调用</p>
+                            <p>var date = new Date();没输入参数返回当前时间</p>
+                            <p>通常用字符串形式输入参数new Date('2021-9-1 8:56')</p>
+                            <p>getFullyear（）返回当前年</p>
+                            <p>使用getMonth（）时要+1，返回当前月0-11月</p>
+                            <p>getDate（）获得当前日期</p>
+                            <p>getDay（）获得当前星期几，星期日是0</p>
+                            <p>getHours（）获得当前的小时数</p>
+                            <p>getMinutes（）获得当前的分钟数</p>
+                            <p>getSeconds（）获得当前秒数</p>
+                            <p><img src="../img/获取时间.png" alt=""></p>
+                            <p>valuerOf(),getTime()是返回距离1970.1.1的毫秒数:时间戳</p>
+                            <p class="red">也可以写成var date = +new Date（）或者Date.now()</p>
+                            <p>倒计时就能用时间戳来计算</p>
+                            <p><img src="../img/倒计时.png" alt=""></p>
+
+
+                            <p><b>数组对象</b></p>
+                            <p>检测是否为数组</p>
+                            <p class="red">ingstanceof是一个运算符， arr instenceof Array；返回true或false</p>
+                            <p>Array.isArray(arr)</p>
+                            <p>添加或者删除数组的方法</p>
+                            <p class="red">arr.push(参数1……)</p>
+                            <p>push（）在数组元素末尾加一个元素（）中的值为数组元素的值</p>
+                            <p>push（）完毕后返回新数组的长度</p>
+                            <p class="red">arr.unshift（参数1……）</p>
+                            <p>unshift（）在数组开头添加一个元素</p>
+                            <p class="red">arr.pop（）</p>
+                            <p>可以删除数组的最后一个元素</p>
+                            <p>没有参数，只能删除一个，返回的是删除的那个元素</p>
+                            <p class="red">arr.shift()</p>
+                            <p>可以删除数组的第一个元素</p>
+                            <p>没有参数，只能删除一个，返回的是删除的那个元素</p>
+                            <p class="red">arr.reverse();</p>
+                            <p>翻转数组</p>
+                            <p class="red">arr.sort();</p>
+                            <p>冒泡排序，但是只比单个位数上的值</p>
+                            <p>可以通过arr.sort(function(a,b){ return a-b; })</p>
+                            <p>return a-b 是升序排列</p>
+                            <p>return b-a 是降序排列</p>
+                            <p><img src="../img/数组案例.png" alt=""></p>
+                            <p class="red">arr.indexOf('数组元素');</p>
+                            <p>返回输入数组元素的索引值，只返回<b>第一个满足条件</b>的索引号，若没有则返回-1</p>
+                            <p class="red">arr.lastIndexOf('数组元素');</p>
+                            <p>基本与上一个一致，从后面开始查找</p>
+                            <p><img src="../img/数组去重.png" alt=""></p>
+                            <p class="red">arr.join(分隔符)数组转字符串</p>
+                            <p>分隔符不写，默认，分隔<br>.toString()也可以实现，但是不能选择分隔符</p>
+
+
+                            <p><b>字符串对象(重难点)</b></p>
+                            <p>把简单数据类型转为复杂数据类型：str类型会自动包装成String的对象，可以直接调用他的属性值</p>
+                            <p>基本包装类型有String,Number,Boolean</p>
+                            <p>因此会有.length的属性可以直接调用</p>
+                            <p>字符串是不可变的，改变值只是引用了新值，改变了地址，但原先值还保留，因此不要大量拼接</p>
+                            <p class="red">str.indexOf('要查找的字符',查找起始位置)</p>
+                            <p>也可以查询字符串的顺序和数组查询一致</p>
+                            <p class="red">str.charAt(index)根据位置返回字符</p>
+                            <p>str.charCodeAt(index)</p>
+                            <p>返回索引号的字符的ASCII值，可以判读用户按了哪个键</p>
+                            <p>str[index]html5可以使用，考虑兼容性问题</p>
+                            <p>重点<img src="../img/统计出现次数最大的字符.png" alt=""></p>
+                            <table class="table">
+                                <tr>
+                                    <th>方法名</th>
+                                    <th>说明</th>
+                                </tr>
+                                <tr>
+                                    <td>concat（str1，str2，str3……）</td>
+                                    <td>concat（）方法用于连接两个或多个字符串，等效于+</td>
+                                </tr>
+                                <tr>
+                                    <td>substr（start，length）</td>
+                                    <td class="red">从start位置开始（索引号），length取的个数，</td>
+                                </tr>
+                                <tr>
+                                    <td>slice（start，end）</td>
+                                    <td>从start位置开始，截取到end位置，end取不到</td>
+                                </tr>
+                                <tr>
+                                    <td>substring（start，end）</td>
+                                    <td>从start位置开始，截取到end位置，end取不到，和slice基本相同但不取负值</td>
+                                </tr>
+                            </table>
+                            <p>替换字符str.replace('被替换的字符','替换为的字符')</p>
+                            <p>只替换第一个字符</p>
+                            <p>str.split('分隔符')字符转数组</p>
+
+                            <p><b>数据类型</b></p>
+                            <p>简单数据类型和复杂数据类型</p>
+                            <p>简单数据类型，存储时变量存储的时值本身，也叫做值类型</p>
+                            <p>string，number，boolen，undefined，null</p>
+                            <p>复杂数据类型，在存储变量中存储的仅仅时地址（引用）通过new关键字创建，</p>
+                            <p>object，array，date</p>
+                            <p>栈和堆</p>
+                            <p>栈：存储简单数据类型，存放数据的值，复杂数据的地址（用16进制储存）</p>
+                            <p>堆：存储复杂数据类型，通过栈存放的地址，引用到堆中的对象实例</p>
+                        </li>
+                        <!-- 5.5模块 -->
+
+
+
+
+                    </ul>
+                </div>
+                <!-- 第五部分 -->
+            </div>
+            <!-- page1 -->
+
+
+            <!-- page2 -->
+            <div id="page2" class="page">
+                <!-- 第六部分 -->
+                <div id="6" class="content">
+                    <h2>DOM 操作方法</h2>
+                    <ul>
+                        <!-- 6.1模块 -->
+                        <li>
+                            <h4>6.1 dom</h4>
+                            <p>页面文档对象模型(返回都是object对象)</p>
+                            <p>DOM树</p>
+                            <p>文档:一个页面就是一个文档,在DOM里用document表示</p>
+                            <p>元素:页面中所有标签都是元素,在DOM中使用element表示</p>
+                            <p>节点:网页中的所有内容都是节点(标签,属性,文本,注释等),DOM中使用node表示</p>
+                            <p class="red">DOM把以上内容都看作对象</p>
+
+                            <p><b>获取元素</b></p>
+                            <p><b>getElementById()</b></p>
+                            <p>可以返回匹配id的元素</p>
+                            <p>返回的是一个element对象</p>
+                            <p>
+                                <div id="time">2021-9-3//返回元素对象</div>
+                            </p>
+                            <p>console.dir()//打印返回的元素对象</p>
+
+                            <p><b>getElementsByTagetName()</b></p>
+                            <p>返回带有指定标签名的元素对象的集合</p>
+                            <p>以伪数组的方式存储</p>
+                            <p>可以通过数组遍历来获取所有元素,得到的元素对象是动态的</p>
+                            <p>无论是否有这个元素,都会返回伪数组</p>
+                            <p class="red">父元素必须是单个对象(必须指名是哪一个元素对象)</p>
+                            <p>可以用var a =document.getelementbyid()获得父元素</p>
+                            <p>然后a.getelementsbytagetname()</p>
+                            <p><b>h5新语法(以下都是,要考虑兼容性问题):getElementsByClassName返回类名对象集合</b></p>
+                            <p><b>Document.quarySelector('选择器')</b></p>
+                            <p>可以返回指定选择器的<span class="red">第一个元素对象</span>,里面元素要加符号,id要加#,class要加.</p>
+                            <p><b>Document.quarySelectorAll('选择器')</b></p>
+                            <p>根据选择器的所有对象,返回形式以伪数组储存</p>
+                            <p>获取body和html标签</p>
+                            <p>body直接document.body</p>
+                            <p>html要document.documentElement</p>
+
+                        </li>
+                        <!-- 6.1模块 -->
+
+
+                        <!-- 6.2模块 -->
+                        <li>
+                            <h4>6.2事件基础</h4>
+                            <p>事件有三部分组成 事件源/事件类型/事件处理程序</p>
+                            <p>(1)事件源 事件被触发的对象</p>
+                            <p>(2)事件类型 如何触发 什么事件 比如鼠标点击</p>
+                            <p>(3)事件处理程序,通过一个函数赋值的方式完成</p>
+                            <p><button id="btn">点击</button></p>
+                            <p>btn.onclick=function(){ alert('完成点击')}</p>
+                            <p><b>改变元素内容</b></p>
+                            <p>element.innerText:从起始位置到终点位置的内容，不识别html标签，同时空格和换行也去掉</p>
+                            <P>element.innerHTML：从起始位置到终点位置的全部内容，识别html标签，W3C推荐标准</P>
+                            <p><button id="timer1">显示时间</button>
+                                <div id="timer2">当前时间</div>
+                            </p>
+
+                            <p><button id="src_change" class="btn btn-danger">修改元素属性src</button></p>
+                            <p><img src="../img/backgroud_1.jpg" alt="" width="200px" id="background"></p>
+
+                            <p><b>表单元素的属性操作</b></p>
+                            <p>type、value、checked、selected、disabled</p>
+                            <p>
+                                <button class="btn btn-info" id="input_change">修改表单元素</button>
+                                <form class="form-inline"><input type="text" value="这是一个input标签" class="form-control" id="input"></form>
+                            </p>
+                            <p><a href="../html/html案例/登录表单.html">密码显示案例</a> </p>
+                            <p><b>样式属性修改</b></p>
+                            <p>element.style.属性名=属性值，其中里面的样式采取驼峰命名法（这是行内样式的修改）</p>
+                            <p>element.className=类名（修改类名进行操作）</p>
+                            <p><button class="btn btn-success" id="style_change">修改样式</button></p>
+                            <p>
+                                <div class="div1" id="style_div"></div>
+                            </p>
+                            <p><b>排他思想</b></p>
+                            <p>如果有一组元素，我们只需要选择的元素拥有样式</p>
+                            <p>需要先将其他所有元素清除样式</p>
+                            <p>然后设置选中的样式</p>
+                            <p>
+                                <button class="btns">按钮1</button>
+                                <button class="btns">按钮2</button>
+                                <button class="btns">按钮3</button>
+                            </p>
+                            <p>鼠标经过onmouseover，鼠标离开onmouseout</p>
+                            <p>效果类似于：hover</p>
+                            <p>表单中checkbox的checked可以表示当前复选框的选中状态，如果是true就是被选中</p>
+
+
+
+                        </li>
+                        <!-- 6.2模块 -->
+
+                        <!-- 6.3模块 -->
+                        <li>
+                            <h4>6.3自定义属性</h4>
+                            <p>为了保存并使用数据，有些数据可以保存到页面中而不用保存到数据库中</p>
+                            <p>获取自定义属性值</p>
+                            <p>element.属性 获取属性值</p>
+                            <p>element.getAttribute('属性')</p>
+                            <p>设置元素属性值</p>
+                            <p>element.属性 ='值' </p>
+                            <p>element.setAttribute('属性','属性值')主要针对自定义属性</p>
+                            <p>特殊点：第一种是className，第二种的属性是class</p>
+                            <p>移除元素属性值</p>
+                            <p>elemlent.removeAttribute('属性')</p>
+                            <p><b>H5自定义属性</b></p>
+                            <p>H5规定自定义属性要以data-开头作为属性名并且赋值</p>
+                            <p>比如《div data-index = "1"》《/div》</p>
+                            <p>element.setAttribute('data-index',2)</p>
+                            <p>h5新增的获取自定义属性的方法</p>
+                            <p>dataset是一个集合中存放了所有以data开头的自定义属性</p>
+                            <p>如果自定义属性里面有多个-链接的单词，采取驼峰命名法</p>
+                            <p>element.dataset.index</p>
+                            <p>element.daraset['index']</p>
+
+                            <p><b>案例</b></p>
+                            <p>
+                                &lt;div id="content" data-age="18"&gt;html5 data-*自定义属性 age&lt;/div&gt;
+                            </p>
+                            <p> var content= document.getElementById('content');</p>
+                            <p>console.log(content.dataset.age);//读 </p>
+                            <p>content.dataset.name ="小白”;//写</p>
+                            <p> console.log(content.dataset.name);//读</p>
+
+                            <p>案例TAP栏切换</p>
+                            <p>
+                                <a href="../../练习/html/js练习/js练习1.html">js练习1</a>
+                            </p>
+                            <img src="../img/tab栏切换布局.png" alt="">
+                        </li>
+                        <!-- 6.3模块 -->
+                        <!-- 6.4模块 -->
+                        <li>
+                            <h4>6.4节点操作</h4>
+                            <p>利用父子兄节点关系获取元素</p>
+                            <p>所用内容（标签、属性、文本、注释等）都是节点。在DOM中，节点用node来表示</p>
+                            <p>节点至少拥有node Type（节点属性）、nodeName（节点名称）、nodeValue（节点值）三个基本属性</p>
+                            <p>元素节点 nodeType'为1</p>
+                            <p>属性节点 nodeType'为2</p>
+                            <p>文本节点 nodeType'为3</p>
+                            <!-- 父节点 -->
+                            <p><b>父节点parentNode</b></p>
+                            <p>得到的是离元素最近的父级节点，如果没有返回null</p>
+                            <p><b>子节点childNodes（麻烦，可以不记）</b></p>
+                            <p>得到的也是一个集合（伪数组），其中换行也是节点（文本节点）</p>
+                            <p>可以用节点属性来选中节点，遍历元素节点再判断是否为nodeType==1</p>
+
+                            <!-- 子元素节点 -->
+                            <p><b>子节点childen（常用，只获取元素节点）</b></p>
+                            <p>第一个子元素节点firstelementchild</p>
+                            <p>最后一个子元素节点lastelementchild</p>
+                            <p>有兼容性问题：ie9以上</p>
+                            <p>实际开发中，考虑到兼容性问题常用
+                                <br>element.childen[0],element.children[element.childen.length-1]</p>
+
+                            <!-- 兄弟节点 -->
+                            <p><b>兄弟节点（基本用的较少）</b></p>
+                            <p>下一个（包括元素节点或者文本节点）element.nextSibling</p>
+                            <p>上一个（包括元素节点或者文本节点）element.previousSibling</p>
+                            <p>获取元素节点，同样需要考虑兼容性ie9以上</p>
+                            <p>下一个元素节点element.nextElementSibling</p>
+                            <p>上一个元素节点element.previousElementSibling</p>
+
+                            <!-- 创建节点 -->
+                            <p><b>创建节点</b></p>
+                            <p>document.createElement('tagName')</p>
+                            <p>根据我们的需求动态生成，也成为动态创建元素节点</p>
+
+                            <!-- 添加节点 -->
+                            <p><b>添加节点</b></p>
+                            <p>node.appendChild(child)</p>
+                            <p>将一个节点添加到父节点的子节点列表末尾，类似after伪元素</p>
+                            <p>node.insertBefore(child，指定元素)</p>
+                            <p>将一个节点添加到父节点的指定子节点的前面，类似after伪元素</p>
+                            <p>得到新的元素：先创建一个元素，再添加元素</p>
+
+                            <!-- 删除节点 -->
+                            <p><b>删除节点</b></p>
+                            <p>node.removeChild(child)</p>
+                            <p>删除父节点中的子节点</p>
+
+                            <!-- 复制节点 -->
+                            <p><b>复制节点</b></p>
+                            <p>node.cloneNode（）只是复制，需要添加节点appendchild</p>
+                            <p>如果括号内为空或者false，只复制标签不复制内容</p>
+                            <p>如果括号内为true，复制标签和里面的内容</p>
+
+                            <p class="red">document.write（）、innerHTML和createElement</p>
+                            <p>三种都可以进行元素创建，但是第一张会造成页面重绘（只显示括号内的内容）</p>
+                            <p>第二中和第三种两个创建元素效果类似，第二种通过拼接字符串的方式，第三种是先创建再添加</p>
+                            <p>但是第二种如果是拼接字符串所有执行效率低于第三种</p>
+                            <p>第二种是采用数组形式拼接的话会快于第三种</p>
+                        </li>
+                        <!-- 6.4模块 -->
+
+                        <!-- 6.5模块 -->
+                        <li>
+                            <h4>6.5事件高级</h4>
+                            <!-- 注册事件 -->
+                            <p>给元素添加事件，称为注册事件或者绑定事件</p>
+                            <p>注册事件的方式有两种：<span class="red">传统方式和方式监听注册方式</span></p>
+                            <p>传统注册方式：注册方式的唯一性，on开头注册，同一个元素同一个事件只能设置一个处理函数</p>
+                            <p>方法监听注册方式（推荐方式）：w3c标准推荐方式，addEventListener（）是它的一个方法，ie9之前不支持可使用attachEvent（）代替</p>
+                            <p class="red">eventTarget.addEventListener(type,listener[,useCapture]）</p>
+                            <p>type：事件类型字符串，需要加''比如'click'、'mouseover'，注意这里不要带on</p>
+                            <p>listener：事件处理函数，还是function（）{}事件发生时，会调用该监听函数</p>
+                            <p>useCapture：可选参数，是一个布尔值，默认false</p>
+                            <p class="jianting"><button>方法监听注册事件</button></p>
+                            <p>attachEvent（'onclick',function(){ alert('')}）仅作了解,该特性只有在ie9以前才能支持</p>
+
+                            <!-- 删除事件 -->
+                            <p><b>删除事件</b></p>
+                            <p>传统注册方式:element.onclick = null,通常在function中完成事件执行后添加</p>
+                            <p class="red">eventTarget.removeEventListener(type,listener[,useCapture]）</p>
+                            <p>这里移除不能用匿名函数来做,要创建函数，再在函数里调用函数名</p>
+
+                            <!-- DOM事件流 -->
+                            <p><b>DOM事件流（重要）</b></p>
+                            <p>描述页面中接受事件的顺序</p>
+                            <p>分为三个阶段：<span class="red"> 1.捕获阶段 2.当前目标阶段 3.冒泡阶段</span></p>
+                            <p><img src="../img/DOM事件流.png" width="500px" alt=""></p>
+                            <p class="red">JS代码只能执行捕获或者冒泡其中的一个阶段</p>
+                            <p>onclick和attachEvent只能获得冒泡阶段</p>
+                            <p>eventTarget.addEventListener(type,listener[,useCapture]）第三个参数如果时true，表示在事件捕获阶段调用事件处理函数;如果是false（不写默认是false），表示在冒泡阶段调用事件处理函数</p>
+                            <p>son.addEventListener('click',function(){},true)//第三个阶段为true，表示在事件捕获阶段调用函数</p>
+                            <p>father.addEventListener('click',function(){},true)//在事件捕获阶段调用函数，是father-->son，所有如果就算点击的是在father中的son也先执行father</p>
+                            <p>捕获阶段先执行大的，冒泡阶段先执行小的</p>
+                            <p>实际开发中更关注事件冒泡，有些事件是没有冒泡的，比如onblur、onfocus、onmouseenter、onmouseleave</p>
+
+                            <!-- 事件对象 -->
+                            <p><b>事件对象（重要）</b></p>
+                            <p class="red">事件对象可以当作形参来看，就是function（event）{}中的event,是系统自动创建的，不需要传递实参过去</p>
+                            <p>事件对象是我们事件的一系列相关数据的集合，比如鼠标点击就包含了鼠标点击时的相关信息，例如鼠标坐标，如果时键盘事件就包含了键盘事件的信息，比如用户按下了哪一个键</p>
+                            <p>ie678不兼容，只能通过window.event，event = event || window.event</p>
+
+                            <p>
+                                <table class="table">
+
+                                    <tr>
+                                        <th>事件对象属性方法</th>
+                                        <th>说明</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>e.target</td>
+                                        <td>返回触发事件的对象</td>
+                                    </tr>
+                                    <tr>
+                                        <td>e.srcElement</td>
+                                        <td>返回触发事件的对象（ie678）</td>
+                                    </tr>
+                                    <tr>
+                                        <td>e.type</td>
+                                        <td>返回事件的类型，比如click，不带on</td>
+                                    </tr>
+                                    <tr>
+                                        <td>e.cancelBubble</td>
+                                        <td>该属性阻止冒泡，非标准，ie678使用</td>
+                                    </tr>
+                                    <tr>
+                                        <td>e.returnValue</td>
+                                        <td>该属性阻止默认事件（默认行为），比如不让链接跳转，非标准，ie678使用</td>
+                                    </tr>
+                                    <tr>
+                                        <td>e.preventDefult()</td>
+                                        <td>该方法阻止默认事件（默认行为），比如不让链接跳转，标准</td>
+                                    </tr>
+                                    <tr>
+                                        <td>e.stopPropagation()</td>
+                                        <td>阻止冒泡，标准</td>
+                                    </tr>
+
+                                </table>
+                            </p>
+
+                            <p class="red">e.target和this的区别：前者是触发事件的对象，this是绑定事件的对象</p>
+                            <p>当存在父子元素时，给父元素绑定事件this返回的是父元素，而如果触发的是父元素中的子元素，e.target的返回子元素</p>
+                            <p>即e.target是点击的元素，this是绑定的元素，（子元素虽然没有注册事件，但根据事件冒泡，会执行父元素中的事件，此时e.target返回的就是点击的子元素）</p>
+                            <p>e.preventDefult()可以阻止a标签的跳转，和e.returnValue不同是一个方法要加（），return false也可以阻止，但是后续语句无法执行</p>
+                            <!-- 阻止冒泡 -->
+                            <p><b>阻止冒泡的两种方式</b></p>
+                            <p>标准写法 e.stopPropagation(),写在完成执行语句的后面，防止继续冒泡</p>
+                            <p>非标准写法 e.cancelBubble(),防止继续冒泡</p>
+
+                            <!-- 冒泡带来的好处 -->
+                            <p><b>事件委托</b></p>
+                            <p>事件冒泡带来的好处：给父节点添加事件监听器，由于事件冒泡点击虽然是子元素，但是父节点的事件依然可以完成</p>
+                            <p>例如ul中有10个li，如果正常设置需要遍历所有li绑定事件，通过事件委托就可以只设置ul的事件，然后通过e.target来选中对应的li，而其他的取消选中则可以用this.children[i]来选中</p>
+                            <p>事件委托可以极大的提升程序的性能，只操作了一次DOM</p>
+
+                            <!-- 鼠标事件 -->
+                            <p><b>鼠标触发事件</b></p>
+                            <p>onclick点击，onmouseover鼠标经过，onmouseout鼠标离开，onfocus获得焦点，onblur失去焦点</p>
+                            <p>禁止鼠标右键事件，('<span class="red">contextmenu</span>',funcation(e){e.preventDefault()})</p>
+                            <p>禁止鼠标选中，('<span class="red">selectstart</span>',funcation(e){e.preventDefault()})</p>
+
+                            <p><b>鼠标事件对象MouseEvent</b></p>
+                            <p>e.clientX/Y,鼠标相对于浏览器窗口可视区域的X/Y坐标</p>
+                            <p>e.pageX/Y,鼠标相对于文档页面的坐标，IE9+支持</p>
+                            <p>e.screenX/Y,鼠标相对于电脑屏幕的坐标</p>
+                            <p>鼠标移动事件：mousemove 鼠标移动时事件触发<br> 可以用来实现图篇的鼠标跟随，或在跟随放大镜
+                            </p>
+
+                            <p><b>mouseover和mouseenter的区别同样对应mouseout和mouseleave</b></p>
+                            <p>mouseover鼠标经过自身盒子会触发，经过子盒子也会触发</p>
+                            <p>mouseenter只有鼠标经过自身盒子会触发（不会事件冒泡）</p>
+
+                            <!-- 键盘事件 -->
+                            <hr>
+                            <p><b>键盘事件（传统写法，addEventListerner不用加on）</b></p>
+                            <p>onkeyup，某个键盘松开时触发</p>
+                            <p>onkeydown，某个键盘按下时触发，执行顺序在press之前</p>
+                            <p>onkeypress，某个键盘按下时触发，但是它不识别功能键比如ctrl、shift等</p>
+
+                            <p><b>键盘事件对象</b></p>
+                            <p>e.keycode,得到相应键的ASCII码值，keyup和keydown不区分大小写，通过keypress区分</p>
+                            <p>貌似现在已经被禁用，改用e.code区分大小写</p>
+                            <p>案例：可以用来做按s直接定位到搜索框，因为按下时会一直触发，所有用keyup更合适</p>
+
+
+
+                        </li>
+                        <!-- 6.5模块 -->
+                    </ul>
+                </div>
+                <!-- 第六部分 -->
+
+                <!-- 第七部分 -->
+                <div id="7" class="content">
+                    <h2>BOM 操作方法</h2>
+                    <ul>
+                        <!-- 7.1模块 -->
+                        <li>
+                            <h4>BOM</h4>
+                            <P>浏览器对象模型</P>
+                            <p>bom和dom的对比：dom将网页中的内容看为一个对象，bom将浏览器看为一个对象</p>
+                            <p><img src="../img/BOM概括.png" alt=""></p>
+                            <p>window对象是浏览器的顶级对象</p>
+                            <p>是js访问浏览器的一个接口</p>
+                            <p>是一个全局对象，定义在全局作用域中的变量、函数都会编程window对象的属性和方法</p>
+                            <p>调用时都可以省略window，例如alert（）、prompt（）</p>
+
+                            <p><b>页面加载事件</b></p>
+                            <p>window.onload = function（）{}或者 window.addEventListener('load',funcation(){})</p>
+                            <p>页面加载完成后执行，可以将js代码写在里面，然后就不要考虑对象是否加载未完成的问题了</p>
+                            <p> window.addEventListener('<span class="red">DOMContentLoaded</span>',funcation(){})</p>
+                            <p>仅当DOM加载完成时，不包含样式表，图片，flash等等</p>
+
+                            <p><b>调整窗口大小事件</b></p>
+                            <p> window.addEventListener('<span class="red">resize</span>',funcation(){})</p>
+                            <p>浏览器窗口大小发生变化，就会触发事件，类似媒体查询@media</p>
+                            <p>宽度用innerWidth、高度用innerHeight</p>
+
+                            <p><b>定时器</b></p>
+                            <p>setTimeout()单次定时器和setInterval()循环定时器</p>
+                            <p>
+
+                            </p>
+                            <p>window可以省略不写</p>
+                            <p>window.setTimeout(function(){},0)括号内里面为函数（写函数不加括号）和延迟时间，单位毫秒，延迟时间不写默认0</p>
+                            <p>页面中可能有很多定时器，所以经常给定时器命名var timer = sertimeout（）</p>
+                            <p class="red">回调函数callback</p>
+                            <p>要等上一件事情干完才能调用这个函数，例如onclick</p>
+                            <p>
+                                <div id="ad">广告会在<span>5</span>秒内消失</div>
+                                <button id="ad_stop">停止计时器</button>
+                            </p>
+                            <p><b>停止定时器:window.cleanTimeout(timeout ID)</b></p>
+                            <p>可以配合点击事件停止计时器，但需要定时器的名称，因此要停止的计时器需要命名</p>
+                            <p><b>setInterval()循环定时器</b></p>
+                            <p>反复调用一个函数</p>
+                            <p>
+                                <div id="timer_1"></div>
+                                <button id="ad_stop2">发送</button>
+
+                            </p>
+                            <p>一开始会有一秒的空白，先调用一次函数就可以去掉</p>
+
+                            <h4>This的指向问题</h4>
+                            <p>在全局作用域下，this指向的时全局对象window</p>
+                            <p>this指向的时调用它的对象</p>
+                        </li>
+                        <!-- 7.1模块 -->
+
+                        <!-- 7.2模块 -->
+                        <li>
+                            <h4>js执行队列</h4>
+                            <p><b>同步和异步</b></p>
+                            <p>同步任务：都在主线程上执行，形成一个执行栈</p>
+                            <p>异步任务：1.普通事件（click、resize） 2.资源加载（load、error） 3.定时器（setinterval、settimeout）</p>
+                            <p>JS的异步任务时通过回调函数来实现的，异步任务相关的回调函数添加到任务队列中</p>
+                            <p class="red">先执行执行栈中的同步任务，异步任务（回调函数）放入任务队列中，同步任务完成后，再读取按次序异步任务进入执行栈</p>
+                            <p>异步进程处理，触发了事件才会将异步任务放入任务队列</p>
+                            <p>由于主线程不断重复的获取任务、执行任务、再获取任务，所以这种机制被称为事件循环</p>
+                        </li>
+                        <!-- 7.2模块 -->
+
+                        <!-- 7.3模块 -->
+                        <li>
+                            <h4>BOM对象</h4>
+
+                            <!-- location对象 -->
+                            <p><b>location对象</b></p>
+                            <p>用于获取或设置窗体的URL，并且可以用来解析url</p>
+                            <p>url统一资源定位符,语法通常为protocol://host[:port]/path/[?query]#fragment</p>
+                            <p>其中：protocol为通讯协议常用http，ftp，maito</p>
+                            <p>host为主机域名，例如www.baidu.com</p>
+                            <p>port为端口号，可选，省略时默认使用方案的端口，http为80</p>
+                            <p>path为路径，表示再主机上的一个目录或者文件地址</p>
+                            <p>query参数，以键值对的形式，通过&符号分隔开</p>
+                            <p>fragment片段#后面的内容常用于链接锚点</p>
+
+                            <!-- location对象的属性 -->
+                            <p><b>location对象的属性</b></p>
+                            <p class="red">location.href 获取或者设置整个URL</p>
+                            <p>location.host 返回主机域名</p>
+                            <p>location.port 返回端口号，未写返回空字符串</p>
+                            <p>location.pathname 返回路径</p>
+                            <p class="red">location.search 返回参数</p>
+                            <p>location.hash 返回片段</p>
+                            <p><button class="btn btn-info" id="location_btn">JS跳转页面</button></p>
+                            <p>获取不同页面的数据的传递效果</p>
+
+                            <!-- location对象的方法 -->
+                            <p><b>location对象的方法</b></p>
+                            <p>location.assign()和href一样，可以跳转页面</p>
+                            <p>location.replace()，替换当前页面，不记录历史，不能后退页面</p>
+                            <p class="red">location.reload()重新加载页面</p>
+
+                            <!-- navigator对象 -->
+                            <p><b>navigator对象 </b></p>
+                            <p>仅作了解：可以判断用户用哪个终端打开了页面常用userAgent,返回发送服务器的user-agent头部的值</p>
+                            <!-- history对象 -->
+                            <p><b> history对象方法</b></p>
+                            <p>back（），可以后退功能</p>
+                            <p>forward（），可以前进后退功能</p>
+                            <p>go（参数），前进后退功能，如果参数是1，前进一个页面，如果是-1，后退一个页面</p>
+
+
+
+                        </li>
+                        <!-- 7.3模块 -->
+                        <!-- 7.4模块 -->
+                        <li>
+                            <h4>PC端网页特效</h4>
+                            <a href="../html/js练习/js练习2.html">效果网站</a>
+
+                            <!-- 元素偏移量 -->
+                            <p><b>元素偏移量offset</b></p>
+                            <p>
+                                <table class="table">
+
+                                    <tr>
+                                        <th>offset系列属性</th>
+                                        <th>说明</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>element.offsetParent</td>
+                                        <td>返回作为该元素带有定位的父级元素，如果父级都没有定位则返回body</td>
+                                    </tr>
+                                    <tr>
+                                        <td>element.offsetTop</td>
+                                        <td>返回元素相对带有定位父元素上方的偏移</td>
+                                    </tr>
+                                    <tr>
+                                        <td>element.offsetLeft</td>
+                                        <td>返回元素相对带有定位父元素左边框的偏移</td>
+                                    </tr>
+                                    <tr>
+                                        <td>element.offsetWidth</td>
+                                        <td>返回自身包括padding、边框、内容区的宽度，返回值不带单位</td>
+                                    </tr>
+                                    <tr>
+                                        <td>element.offsetHeight</td>
+                                        <td>返回自身包括padding、边框、内容区的高度，返回值不带单位</td>
+                                    </tr>
+
+
+                                </table>
+                            </p>
+                            <p><b>注意：</b></p>
+                            <p>1.offset没有bottom和right，返回的值不带单位</p>
+                            <p>2.它以带有定位的父元素为主，如果没有父亲或者父亲没有定位，则以body为主</p>
+                            <p>3.offsetWidth和offsetHeight会返回元素的宽度和高度（包含padding和bording）</p>
+                            <p>和style的区别：</p>
+                            <p>offset能获得任意样式表的样式值，不带单位，只读属性不可赋值，<span class="red">更适合获取元素大小位置</span></p>
+                            <p>style只能获得行内样式表的样式值，带单位，可以赋值，<span class="red">更适合给元素改值</span></p>
+                            <p></p>
+
+                            <p><b>元素可视区域client</b></p>
+                            <p>
+                                <table class="table">
+
+                                    <tr>
+                                        <th>client系列属性</th>
+                                        <th>说明</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>element.clientTop</td>
+                                        <td>返回元素上边框的大小</td>
+                                    </tr>
+                                    <tr>
+                                        <td>element.clientLeft</td>
+                                        <td>返回元素左边框的大小</td>
+                                    </tr>
+                                    <tr>
+                                        <td>element.clientWidth</td>
+                                        <td>返回自身包括padding、内容区的宽度，不包括边框，返回值不带单位</td>
+                                    </tr>
+                                    <tr>
+                                        <td>element.clientHeight</td>
+                                        <td>返回自身包括padding、内容区的高度，不包括边框，返回值不带单位</td>
+                                    </tr>
+
+
+                                </table>
+                            </p>
+
+
+                            <!-- 立即执行函数 -->
+                            <p><b>立即执行函数</b></p>
+                            <p>(funcation(){})()</p>
+                            <p>创建一个独立的作用域，不需要调用，立马可以自己执行，第二个小括号可以传递参数给里面的函数</p>
+                            <p></p>
+
+
+                            <p><b>元素滚动scroll</b></p>
+                            <p>
+                                <table class="table">
+
+                                    <tr>
+                                        <th>scroll系列属性</th>
+                                        <th>说明</th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>element.scrollTop</td>
+                                        <td>返回被卷去的上侧距离，返回数值不带单位</td>
+                                    </tr>
+                                    <tr>
+                                        <td>element.scrollLeft</td>
+                                        <td>返回被卷去的左侧距离，返回数值不带单位</td>
+                                    </tr>
+                                    <tr>
+                                        <td>element.scrollWidth</td>
+                                        <td>返回自身实际的宽度，不包括边框，返回值不带单位</td>
+                                    </tr>
+                                    <tr>
+                                        <td>element.scrollHeight</td>
+                                        <td>返回自身实际的高度，不包括边框，返回值不带单位</td>
+                                    </tr>
+
+
+                                </table>
+                            </p>
+                            <p>window.scroll(x,y)</p>
+                            <p>window.scroll(0,0)可以返回页面顶部</p>
+
+                            <p class="red">注意元素被卷去的头部是scrollTop,如果是页面被卷去的头部则是window.pageYOffset</p>
+
+                            <p><b>三大系列总结</b></p>
+                            <p>offset系列经常用于获取元素位置</p>
+                            <p>client系列经常用于获取元素大小</p>
+                            <p>scroll系列经常用于获取滚动距离</p>
+
+                        </li>
+                        <!-- 7.4模块 -->
+
+                        <!-- 7.5模块 -->
+                        <li>
+                            <h4>动画效果</h4>
+                            <p>核心原理：通过定时器setInerval()不断移动盒子的位置</p>
+                            <p>主要元素要添加定位，才能使用left和top</p>
+
+                            <a href="../html/js练习/js动画.html">动画效果</a>
+                            <p>节流阀</p>
+                            <p>防止轮播图按钮连续点击过快</p>
+                            <p>在开始的时候设置一个变量flag为true</p>
+                            <p>在点击时flag变为false，结束动画后回调函数为true</p>
+                            <p>
+                                <a href="../../demo_GenShinImpact/html/index.html">轮播图案例</a>
+                                <a href="../../AlloyTeam/demo.html">导航栏跟随</a>
+
+                            </p>
+
+                        </li>
+                        <!-- 7.5模块 -->
+
+                        <!-- 7.5模块 -->
+                        <li>
+                            <h4>移动端效果</h4>
+                            <p>
+                                <a href="../../demo_FC/index.html">移动端效果</a>
+                            </p>
+                            <p><b>touch事件</b></p>
+                            <table class="table">
+
+                                <tr>
+                                    <th>touch事件</th>
+                                    <th>说明</th>
+                                </tr>
+
+
+                                <tr>
+                                    <td>touchstart</td>
+                                    <td>手指触摸到一个DOM元素时触发</td>
+                                </tr>
+                                <tr>
+                                    <td>touchmove</td>
+                                    <td>手指在一个DOM元素上滑动时触发</td>
+                                </tr>
+                                <tr>
+                                    <td>touchend</td>
+                                    <td>手指从一个DOM元素离开时触发</td>
+                                </tr>
+
+                            </table>
+
+                            <p><b>触摸事件对象</b></p>
+                            <table class="table">
+
+                                <tr>
+                                    <th>触摸事件对象</th>
+                                    <th>说明</th>
+                                </tr>
+
+
+                                <tr>
+                                    <td>touches</td>
+                                    <td>正在触摸屏幕的所有手指的一个列表</td>
+                                </tr>
+                                <tr class="red">
+                                    <td>targetTouches</td>
+                                    <td>正在触摸当前DOM元素上的手指的一个列表</td>
+                                </tr>
+                                <tr>
+                                    <td>changedTouches</td>
+                                    <td>手指状态发生改变的列表，从无到有，从有到无变化</td>
+                                </tr>
+
+                            </table>
+
+                            <p><b>移动端拖动元素</b></p>
+
+                            <p>1.触摸元素touchstart：获得手指初始坐标，同时获得盒子初始位置</p>
+                            <p>2.移动手指touchmove：计算手指滑动距离，并且移动盒子</p>
+                            <p>3.离开手指touchend</p>
+
+                            <p><b>其中：当前手指坐标值可以通过targetTouch[0]里面的pageX和pageY</b></p>
+                            <p class="red">由于手指移动会触发滚动屏幕所以这里要阻止默认的屏幕滚动e.preventDefault()</p>
+                            <p>.classList.add()和.className效果类似，但是不会覆盖原先的类，而是加上一个类</p>
+                            <p>.classList.remove()同理</p>
+                            <p>.classList.toggle()会判断原先有无该class，如果没有就加上，如果有就去掉</p>
+                            <p class="red">移动端因为具有双击缩放页面的效果，所以移动端的click事件具有300ms的延迟，去判断</p>
+                            <p><b>解决方案</b></p>
+                            <p>1.禁止缩放，《meta name='viewport' <span class="red">content='user-scalable=no</span> '》</p>
+                            <p>2.利用touch事件自己封装这个事件解决300ms延迟，第一次触摸时记录时间，离开时减去触摸时间</p>
+                            <p>3.利用js插件，例如之前写的animation.js也算一个插件，这里可以用fastclick插件</p>
+
+                            <p><b>swiper插件</b></p>
+                            <p>
+                                <a href="https://www.swiper.com.cn/">swiper网站地址</a>
+                            </p>
+                            <p><b>其他插件</b></p>
+                            <p>
+                                <a href="http://www.superslide2.com/">superslide网站地址</a>
+                            </p>
+                            <p>
+                                <a href="https://github.com/cubiq/iscroll">iscroll网站地址</a>
+                            </p>
+                        </li>
+                        <!-- 7.5模块 -->
+
+                        <!-- 7.6模块 -->
+                        <li>
+                            <h4>本地存储</h4>
+                            <p>1.数据存储在用户浏览器中</p>
+                            <p>2.设置、读取方便、甚至页面刷新不丢失数据</p>
+                            <p>3.sessionStorage能存大约5m，locolStorage大约20m</p>
+                            <p>4.只能存储字符串，可以将对象JSON.stringify（）编码后储存</p>
+                            <p><b>window.sessionStorage</b></p>
+                            <p>(1)生命周期为关闭浏览器窗口</p>
+                            <p>(2)同一个窗口下数据可以共享</p>
+                            <p>(3)以键值对的形式储存使用</p>
+
+
+
+                            <label for="exampleInputName2">请输入数据</label>
+                            <input type="text" class="form-control" id="ipt">
+                            <button class=" btn btn-default" id="set">储存数据</button>
+                            <button class=" btn btn-info" id="get">获取数据</button>
+                            <button class=" btn btn-danger" id="remove">删除数据</button>
+                            <button class=" btn btn-success" id="del">清除所有数据</button>
+
+                            <p><b>window.localStorage</b></p>
+                            <p>(1)生命周期永久生效，除非手动删除，否则关闭页面也会存在</p>
+                            <p>(2)可以多个窗口（页面）共享（同一浏览器可以共享）</p>
+                            <p>(3)以键值对的形式储存使用</p>
+                            <p class="red">两者的方法名相同</p>
+                            <p>存储数据setItem(key,value)</p>
+                            <p>获取数据getItem(key)</p>
+                            <p>删除数据removeItem(key)</p>
+                            <p>删除所有数据clear()</p>
+                            <p><b>案例：记住用户名</b></p>
+                            <p>1.把数据存起来，用到locolStorage</p>
+                            <p>2.打开页面时，先判断是否有值if(localStorage.getItem)</p>
+                            <p>如果有就在表单里显示用户名，并且勾选记住用户名的复选框</p>
+                            <p>3.当复选框发生改变时就用change事件，checked表示勾选，勾选则储存，不够选则删除</p>
+
+
+
+                        </li>
+                        <!-- 7.6模块 -->
+
+                    </ul>
+                </div>
+                <!-- 第七部分 -->
+                <!-- 第八部分 -->
+                <div id="8" class="content">
+                    <h2>Jquery 操作方法</h2>
+                    <ul>
+                        <!-- 8.1模块 -->
+                        <li>
+                            <h4>jquery基本使用</h4>
+                            <P class="red">入口函数$('document').ready({function()})</P>
+                            <p class="red">或者$(function(){})</p>
+                            <p>等DOM元素加载完毕，相当于js中的DOMcontentLoaded</p>
+
+                            <p><b>jq的顶级元素$,$是jquery的别称，两者可以互相替代</b></p>
+                            <p>同样的也相当于js中的window对象（顶级对象）</p>
+
+                            <p><b>jquery对象和DOM对象</b></p>
+                            <p>DOM是原生js获取的对象</p>
+                            <p>jquery对象的本质是DOM元素的封装，$获取过来的是jquery对象</p>
+                            <p>$中没有style对象（不能使用dom中的对象），同样的dom中也不能使用hide（）（jquery中的方法）</p>
+                            <p><b>两者互相转换</b></p>
+                            <p>1.dom对象转换为jq对象：$(div)</p>
+                            <p>2.jq对象转换为dom对象(由于jq的存储是以伪数组的形式储存的)：$('div')[index]或者$('div').get(index)其中index是索引号</p>
+                            <p><b>jquery基础选择器</b></p>
+                            <p>$("选择器")直接写css选择器即可</p>
+                            <p>jquery设置样式$('div').css('属性','值')</p>
+
+                            <p><b>jquery隐式迭代</b></p>
+                            <p>隐式迭代就是把匹配的所有元素内部遍历，就和css选择器的选择范围一样</p>
+                            <p>jquery筛选选择器</p>
+                            <table class="table">
+                                <tr>
+                                    <th>语法</th>
+                                    <th>用法</th>
+                                    <th>描述</th>
+                                </tr>
+                                <tr>
+                                    <td>:first</td>
+                                    <td>$('li:first')</td>
+                                    <td>获取li的第一个元素</td>
+                                </tr>
+                                <tr>
+                                    <td>:last</td>
+                                    <td>$('li:last')</td>
+                                    <td>获取li的最后一个元素</td>
+                                </tr>
+                                <tr>
+                                    <td>:eq(index)</td>
+                                    <td>$('li:eq(2)')</td>
+                                    <td>获取到的li元素中，选择索引号为2的元素，索引号从0开始</td>
+                                </tr>
+                                <tr>
+                                    <td>:odd</td>
+                                    <td>$('li:odd')</td>
+                                    <td>获取到的li元素中的奇数元素</td>
+                                </tr>
+                                <tr>
+                                    <td>:even</td>
+                                    <td>$('li:even')</td>
+                                    <td>获取到的li元素中的偶数元素</td>
+                                </tr>
+                            </table>
+
+                            <p>筛选方法</p>
+                            <p>语法$('').方法</p>
+                            <p>parent():查找父级</p>
+                            <p>parents(selector):查找祖代选择器</p>
+                            <p>children(selector):最近一级的亲儿子</p>
+                            <p>find(selector):相当于$('ul li'),后代选择器</p>
+                            <p>siblings(selector):查找兄弟节点，但是不包括自身，常用于排他思想</p>
+                            <p>nextAll():当前元素之后的所有同辈元素</p>
+                            <p>prevAll():当前元素之前的所有同辈元素</p>
+                            <p>hasclass(class):检查当前的某个元素是否含有某个特定的类，有则返回true</p>
+                            <p>eq(index):相当于$('ul:eq(2)')index从零开始</p>
+
+                            <p>tap栏显示案例jq写法</p>
+                            <p>
+                                <a href="../html/js练习/jq_tap栏练习.html"></a>
+                            </p>
+
+                            <p>jquery的链式编程</p>
+                            <p>在jq中你可以通过多行连写简化代码</p>
+                            <p>例如之前的tap栏切换代码， $('.content div').eq(index).show()<br> $('.content div').eq(index).siblings().hide()</p>
+                            <p class="red">通过链式编程的思想可以写成$('.content div').eq(index).show().siblings().hide()</p>
+                            <p>可以在元素添加完后对其兄弟元素进行相应的操作</p>
+                            <p><b>jquery样式操作</b></p>
+                            <p>操作css方法：</p>
+                            <p>1.参数只写属性名，<b>则是返回属性值</b></p>
+                            <p>2.参数是属性名，属性值，逗号分隔，<b>是设置一组样式</b>，属性必须加引号，值如果是数字可以不用跟单位和引号</p>
+                            <p>3.参数可以是对象形式，<b>方便设置多组样式</b>，属性名和属性值用冒号隔开，属性可以不用加引号</p>
+                            <p>设置类样式方法</p>
+                            <p>1.添加类addClass():$(this).addClass('current')</p>
+                            <p>2.删除类removeClass():$(this).removeClass('current')</p>
+                            <p>3.切换类toggleClass():$(this).toggleClass('current')</p>
+                            <p class="red">切换类toggle，如果没有该类名就加上，如果有就去掉</p>
+                            <p>原生js中的className会覆盖原先的类名，jq中的方法不影响原先的css(addClass相当于追加类名)</p>
+                            <p></p>
+                        </li>
+                        <!-- 8.1模块 -->
+
+                        <!-- 8.2模块 -->
+                        <li>
+                            <h4>jquery效果</h4>
+                            <p>显示隐藏：show(),hide(),toggle()</p>
+                            <p>滑动：slideDown(),slideUp(),slideToggle()</p>
+                            <p>淡出淡入：fadeIn(),fadeOut(),fadeToggle(),fadeTo()</p>
+                            <p>自定义动画：animate()</p>
+
+                            <p><b>显示隐藏效果</b></p>
+                            <p class="red">show(speed,easing,fn)/hide(speed,easing,fn)</p>
+                            <p>参数都可以省略，无动画直接显示</p>
+                            <p>speed：三种预定速度之一的字符串("slow","nomal","fast"),也可以输入表示动画时长的毫秒数值如：1000</p>
+                            <p>easing:(Optional)用来指定切换效果，默认是"swing"(先快后慢，再快)，可用参数"linear"(匀速)</p>
+                            <p>fn:回调函数，在动画完成时执行的函数，每个元素执行一次</p>
+
+                            <p><b>滑动效果</b></p>
+                            <p>slideDown(speed,easing,fn)下拉</p>
+                            <p>slideUp(speed,easing,fn)上拉</p>
+                            <p>slideToggle(speed,easing,fn)切换</p>
+                            <p>在这里可以搭配鼠标事件hover(enter(写一个函数),leave(写另一个函数))类似于css中的hover</p>
+                            <p>如果只写一个函数那么经过和离开都会触发相同的函数,这里的函数经常写toggle</p>
+                            <p class="red">动画队列及其停止排队的方式stop（），写在动画或者效果的前面，相当于停止结束上一次的动画</p>
+                            <p><img src="../img/jq下拉菜单栏.png" alt=""></p>
+
+                            <p><b>淡入淡出效果</b></p>
+                            <p>fadeIn(speed,easing,fn)淡入</p>
+                            <p>fadeOut(speed,easing,fn)淡出</p>
+                            <p>fadeToggle(speed,easing,fn)切换</p>
+                            <p>fadeTo(speed,opacity,easing,fn)渐进方式调整到指定的不透明度</p>
+                            <p>最后一种speed和opacity必须要写，可以用来写高亮显示，鼠标进入时其他显示为0.5不透明度，鼠标离开时其他显示为1</p>
+
+                            <p class="red">动画效果</p>
+                            <p>animate(params,[speed],[easing],[fn])</p>
+                            <p>params为想要改变的样式属性，以对象形式传递，必须写，属性名可以不用带引号，如果是复合属性则需要采取驼峰命名法</p>
+                            <p>后三个方法基本相同</p>
+                            <p>举例animate({left:200,top:200,width:500`})</p>
+                            <p>手风琴案例，主要制作思想，鼠标经过某个li，当前宽度改变，并且设置小图片淡出大图片淡入</p>
+                            <p>其余li宽度变小，小图片淡入，大图片淡出</p>
+
+
+                        </li>
+
+                        <!-- 8.2模块 -->
+
+                        <!-- 8.3模块 -->
+                        <li>
+                            <h4>jquery属性操作</h4>
+                            <p><b>设置或获取元素的固有属性值prop()</b></p>
+                            <p>例如：$('a').prop('href')可以获取链接的地址</p>
+                            <p>获取属性语法：prop('属性')</p>
+                            <p>设置属性值:prop('属性','属性值')</p>
+
+                            <p><b>设置或获取元素的自定义属性attr()</b></p>
+                            <p>获取属性语法：attr('属性')/类似原生js中的getAttribute（）</p>
+                            <p>设置属性值:attr('属性','属性值')/类似原生js中的setAttribute（）</p>
+                            <p>同样可以获取h5的自定义属性attr('data-属性')</p>
+                            <p>H5自定义属性详细见6.3模块，也可以参考
+                                <a href="https://www.cnblogs.com/s-qiu/p/7339094.html">该网站</a>
+                            </p>
+
+                            <p><b>数据缓存data()这个里面的数据是存放在元素的内存里面</b></p>
+                            <p>$('span').data('uname','andy')//写</p>
+                            <p>console.log($('span').data('uname'))/读</p>
+                            <p>获取h5 data属性，data.('属性')/和上面的区别就是不用写data-开头，且获取的是数字型</p>
+                            <p><a href="../html/js练习/js练习1.html">复选框案例</a></p>
+                            <p><img src="../img/jq全选框.png" alt=""></p>
+
+                            <p><b>jquery内容文本值</b></p>
+                            <P class="red">主要针对元素的内容还有表单的值的操作</P>
+                            <p>1.普通元素内容html()相当于原生innner HTML</p>
+                            <p>2.获取设置元素文本内容text()相当于原生innerText，仅获取文字，不获取标签a</p>
+                            <p>3.设置表单值val()，相当于原生的value</p>
+
+                            <p><b>jquery元素操作（增删查改）</b></p>
+                            <p><b>遍历查找元素</b></p>
+                            <p>遍历元素：$('div').each(funcation(index,domEle){xxx;})</p>
+                            <p>each()方法遍历每一个匹配的元素</p>
+                            <p>回调函数有两个参数：index是每个元素的索引号，domEle是每个DOM元素对象，不是jquery对象</p>
+                            <p class="red">如果要使用jquery方法，需要给这个dom元素转换为jquery对象$(domEle)</p>
+                            <p>例如：$('div').each(funcation(index,domEle){<br>$(domEle).css('color','blue')})</p>
+                            <p>隐式迭代$.each(object,funcation(index,element){xxx;})</p>
+                            <p>$.each()方法可以用于遍历任何对象。主要用于数据处理，比如数组、对象</p>
+                            <p>里面的函数有2个函数：index是每个元素的索引号；element遍历内容</p>
+
+                            <p><b>创建元素</b></p>
+                            <p>创建语法var li = $(' &lt;li&gt; &lt;/li&gt; ')</p>
+                            <p><b>添加元素</b></p>
+                            <p>$('ul').append(li);内部添加并且放在内容的最后面</p>
+                            <p>$('ul').prepend(li);内部添加并且放到内容的最前面</p>
+                            <p>element.after('内容');外部添加并且放在目标元素的后面</p>
+                            <p>element.before('内容');外部添加并且放在目标元素的前面</p>
+                            <p><b>删除元素</b></p>
+                            <p>element.remove()//删除匹配的元素</p>
+                            <p>element.empty()//删除匹配的元素集合中的所有子节点</p>
+                            <p>element.html('')//清空匹配的元素内容</p>
+
+                            <p><b>jquery尺寸</b></p>
+                            <p>width()/height() 取得匹配元素宽度和高度值，不包括padding</p>
+                            <p>innerWidth()/innerHeight() 取得匹配元素宽度和高度值，包括padding</p>
+                            <p>outerWidth()/outerHeight() 取得匹配元素宽度和高度值，包括padding、bording</p>
+                            <p>outerWidth(true)/outerHeight(true) 取得匹配元素宽度和高度值，包括padding、bording、margin</p>
+                            <p class="red">括号内不写值为获取值，写值为赋值</p>
+
+                            <p><b>jquery位置</b></p>
+                            <p>offset()/position()/scrollTop()/scrollLeft()</p>
+                            <p>offset是相对于文档的偏移坐标，跟父级无关，语法：获取对象的top值offset().top</p>
+                            <p>设置对象的值$('.son').offset({ top:200,left:200})</p>
+                            <p>position()是相对于带有定位的父级位置的偏移坐标，如果没有带定位的父级，则以文档为准</p>
+                            <p>scrollTop()/scrollLeft()设置或获取元素被卷去的头部和左侧</p>
+
+                        </li>
+                        <!-- 8.3模块 -->
+
+                        <!-- 8.4模块 -->
+                        <li>
+                            <h4>jq事件处理</h4>
+                            <p><b>jquery事件注册</b></p>
+                            <p>单个事件注册：语法</p>
+                            <p>例如$('div').click(function(){})</p>
+                            <p class="red">事件处理 on</p>
+                            <p>多个事件注册，用on，事件用对象的形式</p>
+                            <p>例如$('div').on({
+                                <br>mouseenter:function(){},
+                                <br>click:function(){},
+                                <br>mouseleave:function(){} }) 这是function不同的时候
+                            </p>
+                            <p>如果里面的function相同，则可以写$('div').on('mouseenter mouseleave',function(){})</p>
+                            <p><b>事件委派</b></p>
+                            <p>$('ul').on('click','li',function(){})</p>
+                            <p>该事件绑定在ul上，但是触发事件的对象是li，通过事件冒泡可以由子元素触发父元素身上的事件</p>
+                            <p>on也可以给未来动态创建的元素绑定事件</p>
+                            <p>
+                                <a href="../html/js练习/jq留言版.html">留言板案例</a>
+                            </p>
+                            <p><b>事件处理off()解绑事件</b></p>
+                            <p>off()可以移除通过on()方法添加的事件处理程序</p>
+                            <p>$('div').off()解除div身上的所有事件</p>
+                            <p>$('div').off('click')解除div身上的click事件</p>
+                            <p>$('ul').off('click','li')解除事件委托</p>
+                            <p>如果有的事件只要触发一次，可以使用one()</p>
+                            <p>自动触发事件</p>
+                            <p>第一种简写模式：element.click()</p>
+                            <p>第二种自动触发模式：element.trigger('type')</p>
+                            <p>第三种：element.triggerHandler('事件')</p>
+                            <p>第三种不会触发元素的默认行为</p>
+
+
+                            <p><b>jq事件对象</b></p>
+                            <p>element.on(events,[selector],function(event){})</p>
+                            <p>阻止默认行为：event.preventDefault()或者return false</p>
+                            <p>阻止冒泡：event.stopPropagation</p>
+
+                            <p><b>jquery拷贝对象</b></p>
+                            <p>$.exetend([deep],target,object1,object2)</p>
+                            <p>deep:如果为true为深拷贝（复制对象本身），默认false为浅拷贝（只复制指向对象的指针）</p>
+                            <p>target:要拷贝的目标对象</p>
+                            <p>object:待拷贝到第一个对象的对象</p>
+                            <p class="red">深拷贝和浅拷贝区别：简单数据类型都是直接拷贝，复杂数据类型：浅拷贝只拷贝地址，深拷贝则会拷贝对象本身（创建一个新的对象）</p>
+
+                            <p><b>jquery多库共存</b></p>
+                            <p>问题概述：jq使用$作为标识符，有些其他的js库也会用$作为标识符，一起使用就会引起冲突</p>
+                            <p>jquery解决方案：</p>
+                            <p>1.把里面的$符号统一为jQuery。比如jQuery('div')</p>
+                            <p>2.jquery变量规定新的名称：$.noConflict() var xx = $.noConflict()</p>
+
+                            <p><b>jquery插件</b></p>
+                            <p><a href="https://www.jq22.com/">jquery插件库</a></p>
+                            <p><a href="http://www.htmleaf.com/">jquery之家</a></p>
+                            <p>1.瀑布流：图片排列样式</p>
+                            <p>2.图片懒加载：图片延迟加载（移动到才加载）</p>
+
+                            <p>
+                                <a href=" https://github.com/alvarotrigo/fullPage.js">3.全屏滚动插件</a>
+                            </p>
+
+                        </li>
+                        <!-- 8.4模块 -->
+                    </ul>
+                </div>
+                <!-- 第八部分 -->
+
+                <!-- 第九部分 -->
+                <div id="9" class="content">
+                    <h2>ES6语法</h2>
+                    <ul>
+                        <!-- 9.1模块 -->
+                        <li>
+                            <h4>面向对象编程</h4>
+                            <p>面向过程编程，是指分析出解决为题所需要的步骤，然后利用函数把这些步骤一步一步实现，再一个一个依次调用</p>
+                            <p>例如：将大象装进冰箱的过程：1.打开冰箱2.放进大象3.关上冰箱，就是面向过程的做法</p>
+                            <p class="red">优点：性能比面向对象高，适合跟硬件联系紧密的东西 </p>
+                            <p class="red">缺点：没有面向对象易维护，易复用，易扩展 </p>
+
+                            <p><b>面向对象编程</b></p>
+                            <p>先找出对象，再写出这些对象的功能1.大象对象：进去2.冰箱对象：打开，关闭</p>
+
+                            <p>面向对象编程编码灵活，代码可复用，容易维护和开发的优点，更适合多人合作的大型软件项目</p>
+                            <p class="red">面向对象的特性</p>
+                            <p><b>封装性</b></p>
+                            <p><b>继承性</b></p>
+                            <p><b>多态性</b></p>
+                            <hr>
+                            <p><b>ES6中的类和对象</b></p>
+                            <p class="red">面向对象的思维特点：</p>
+                            <p>1.抽取（抽象）对象共用的属性和行为组织（封装）成一个模板</p>
+                            <p>2.对类进行实例化，获取类的对象</p>
+                            <p><b>对象由属性和方法组成</b></p>
+                            <p>属性：事物的特征，再对象中用属性来表示（常用名词）</p>
+                            <p>方法：事物的行为，再对象中用方法来表示（常用动词）</p>
+
+                            <p><b>ES6新增了class类的概念</b></p>
+                            <p>类抽象了对象的公共部分，它泛指某一大类（class）</p>
+                            <p>对象特指某一个，通过类实例化一个具体的对象</p>
+                            <hr>
+
+                            <p><b>创建类</b></p>
+                            <p>语法：class name{//class body}</p>
+                            <p>创建实例：var xx = new name()</p>
+                            <p class="red">实例创建必须使用new,类名习惯首字母大写</p>
+                            <p><b>类constructor构造函数</b></p>
+                            <p>该方法是类的构造函数（默认方法），用于传递参数，返回实例对象，通过new命令生成对象实例时，自动调用该方法，如果没有显示定义，类内部会自动给我们创建一个constructor（）</p>
+                            <p><img src="../img/类的创建.png" alt=""></p>
+                            <hr>
+                            <p><b>类的继承</b></p>
+                            <p>子类可以继承父类的一些属性和方法</p>
+                            <p>extends为继承的写法，子类 extends 父类</p>
+                            <p>super关键字，用于访问和调用对象父类上的函数，可以调用父类的构造函数，也可以调用父类的普通函数</p>
+                            <p><img src="../img/类的继承.png" alt=""></p>
+                            <p>1.继承中，如果实例化子类输出一个方法，就先看子类里面有没有这个方法，如果有就先执行子类的</p>
+                            <p>2.继承中，如果子类里面没有，就去查找父类有没有这个方法，如果有，就执行父类的这个方法（就近原则）</p>
+                            <p class="red">super必须在子类this之前</p>
+
+                            <p><b>使用类的两个注意点</b></p>
+                            <p>1.ES6中类没有变量提升，必须先定义类，再实例化对象</p>
+                            <p>2.类里面的共有属性和方法一定要加this使用</p>
+
+                            <hr>
+                            <p><b>constructor中的this指向问题</b></p>
+                            <p>constructor中的this指向的是创建的实例对象</p>
+                            <p>而方法中的this指向的是这个方法的调用者（只有在发生调用时才会生成this）</p>
+                            <p><a href="../html/js练习/js练习3.html">es6 tap栏案例</a></p>
+                            <p>element.insertAdjacentHTML(position,text)</p>
+                            <p>position的值有：</p>
+                            <p>'beforebegin'元素自身的前面</p>
+                            <p>'afterbegin'插入元素内部的第一个子节点之前，相当于（unshift）</p>
+                            <p>'beforeend'插入元素内部的最后一个子节点之后，相当于（appendchild）</p>
+                            <p>'afterend'元素自身的后面</p>
+                            <p><b>appendChild不支持追加字符串的子元素，insertAdjacentHTML支持追加字符串元素</b></p>
+                            <p>编辑功能中的双击需要禁止选中文字</p>
+                            <p> window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty(); </p>
+                        </li>
+                        <!-- 9.1模块 -->
+
+
+                        <!-- 9.2模块 -->
+                        <li>
+                            <h4>构造函数和原型</h4>
+                            <p>利用构造函数创建对象</p>
+                            <p><img src="../img/构造函数创建对象.png" alt=""></p>
+                            <p>首字母大写，要和new一起使用才有意义</p>
+                            <p><span class="red">实例成员</span>就是构造函数内部通过this添加的成员</p>
+                            <p>实例成员只能通过实例化对象来访问</p>
+                            <p>就比如上图中就Star.name就没法输出</p>
+                            <hr>
+                            <p><span class="red">静态成员</span>就是在构造函数本身上添加的成员</p>
+                            <p>静态成员只能通过构造函数来访问</p>
+                            <p>Star.sex = '男 ' ，只能通过Star.sex访问，不能用ldh.sex来访问</p>
+                            <hr>
+                            <p><b>构造函数的问题</b></p>
+                            <p>存在浪费内存的问题</p>
+                            <p>可以通过构造函数原型prototype解决问题</p>
+
+                            <p>构造函数通过原型分配的函数时所有对象共享的</p>
+                            <p>每一个构造函数都有prototype属性，这个属性就是一个对象，它所有的属性和方法，都会被构造函数所拥有</p>
+                            <p>问答： </p>
+                            <p>1.原型是什么</p>
+                            <p>一个对象，我们也称为prototype为原型对象</p>
+                            <p>2.原型的作用是什么</p>
+                            <p>共享方法</p>
+                            <p class="red">一般情况下，我们的公共属性定义到构造函数里面，公共的方法我们放到原型对象身上</p>
+                            <hr>
+
+
+                            <p>对象身上系统自动添加一个_proto_指向我们的构造函数的原型对象prototype</p>
+                            <p>方法的查找规则：首先看ldh对象身上是否有sing方法，如果有就执行这个对象身上的sing，如果没有就去构造函数原型对象prototype身上去查找sing这个方法</p>
+                            <p>即ldh.__proto__ === Star.prototype</p>
+                            <p>__proto__对象原型的意义在于为对象的查找机制提供一个方向，或者说一条路线，但是是一个非标准属性，因此不可以使用这个属性，他只是内部指向原型对象prototype</p>
+                            <p><b>constructor构造函数</b></p>
+                            <p>对象原型和构造函数原型对象里面都有一个属性constructor属性，我们称为构造函数，因为它指向构造函数本身</p>
+                            <p><img src="../img/构造函数、实例、原型对象三者之间的关系.jpg" alt=""></p>
+                            <hr>
+
+
+                            <p><b>原型链</b></p>
+                            <p><img src="../img/原型链.jpg" alt=""></p>
+                            <p>按原型链来查找对象的属性，一层一层往上查找</p>
+                            <p>当放我一个对象的属性或方法是=时，首先查找这个对象自身有没有该属性</p>
+                            <p>如果没有就查找它的原型（也就是__proto__指向的prototype原型对象）</p>
+                            <p>如果还没有就查找原型对象的原型（object对象）</p>
+                            <p>依次类推一致找到object为止</p>
+                            <p><b>如果都有就按照就近原则 </b></p>
+                            <p>this指向一般是实例化的对象（一般是实例化才会调用对象，这时候产生this）</p>
+                            <hr>
+
+
+                            <p><b>扩展内置对象</b></p>
+                            <p>内置对象是object中的对象方法例如数组中的pop(),push(),sort()</p>
+                            <p>可以在数组中添加一个新的内置对象Array.prototype.sum =function(){}</p>
+                            <p>然后就可以之后进行调用var arr = [1,2,3];arr.sum()</p>
+                            <p>数组和字符串内置对象不能给原型对象覆盖操作Array.prototype = {},只能是上述的 .xxx = function(){}的方式</p>
+                            <hr>
+
+
+                            <p><b>call()</b></p>
+                            <p>fun.call(thisArg,arg1,arg2……)</p>
+                            <p>可以调用这个函数并且改变这个函数的this指向</p>
+                            <p>thisArg：当前调用函数this的指向对象</p>
+                            <p>arg1，arg2：传递的其他参数</p>
+                            <p><b>apply(thisArg,[arg])</b></p>
+                            <p>和call基本相同，但是它传递参数使用的是数组的方式</p>
+                            <p><b>bind()</b></p>
+                            <p>和call基本一致，但是不会调用函数只会改变this指向</p>
+                            <hr>
+
+                            <p><b>借用call继承属性</b></p>
+                            <p>可以在son子构造函数中写Father.call(this,uname,age)</p>
+                            <p>function Father(uname,age){ this.uname = uname; this.age = age}</p>
+                            <p>function Son(uname,age){ Father.call(this,uname,age)}</p>
+                            <p>这里的call会改变父构造函数中this指向子构造函数的对象实例</p>
+
+                            <p><b>借用原型对象继承方法</b></p>
+                            <p>Son.prototype = Father.prototype直接赋值会有问题，如果修改了子原型对象，父原型对象也会跟着一起改变</p>
+                            <P>所以可以new一个新的Father实例化对象：Son.prototype = new Father()</P>
+                            <p>用Father.__proto__就可以导入到原型中</p>
+                            <p>如果利用了对象的形式修改了原型对象，别忘了利用constructor指回原来的构造函数</p>
+                            <p>Son.prototype.constructor = Son</p>
+                            <hr>
+                            <P><b>类的本质</b></P>
+                            <p>类的本质还是一个函数，我们可以认为类就是构造函数的另一种写法</p>
+                            <p>类有原型对象protetype，里面有constructor指向它本身</p>
+                            <p>类也可以通过原型对象添加方法</p>
+                            <p>ES6的类就是语法糖（即 两个方法都能实现相同功能，只是更加简洁）</p>
+                            <hr>
+
+                        </li>
+                        <!-- 9.2模块 -->
+
+                        <!-- 9.3模块 -->
+                        <li>
+                            <h4>ES5中新增方法</h4>
+                            <p><b>数组新增方法</b></p>
+                            <p><a href="../html/js练习/js查询商品案例.html">查询商品案例</a></p>
+                            <p>迭代（遍历方法）：forEach（）、map（）、filter（）、some（）、every（）</p>
+                            <p class="red">arr.forEach(function(value,index,array){})</p>
+                            <p>value是每个数组的元素，index是每个数组元素的索引号，array是数组本身</p>
+                            <p>循环遍历数组中的每一条数据，可以对每一个数据进行同一个操作</p>
+                            <p>foreach和some不同的地方在于，foreach不会因为return true而停止遍历</p>
+
+
+                            <p class="red">arr.filter(function(Value,index,array){})</p>
+                            <p>检查指定数组中符合条件的所有元素，主要用于筛选数组</p>
+                            <p><b>它直接返回一个新数组</b></p>
+
+                            <p>arr.map(function(Value,index,array){})</p>
+                            <p>map是映射，把每一个数据从一个形式映射成另外一种形式，每次遍历都会有返回值，最后所有的返回值组合成最终的结果</p>
+
+                            <p class="red">arr.some(function(value,index,arr){})</p>
+                            <p>返回的是一个布尔值，如果找到这个元素，就返回true，如果查找不到就返回false</p>
+                            <p>如果找到第一个满足条件的元素，则终止循环，不在继续查找，效率更高<b>强烈推荐</b></p>
+
+                            <hr>
+                            <p><b>trim()方法:经常在输入表单验证中使用</b></p>
+                            <p>可以去除字符串两边的空格，str.trim()</p>
+                            <p>var str = ' andy '</p>
+                            <p>console.log(str.trim())会输出没有空格的andy</p>
+
+                            <hr>
+                            <p><b>对象方法：对象定义或则修改原有属性 <span class="red">vue会用</span></b></p>
+                            <p>Object.defineProperty(obj,prop,descripter)</p>
+                            <p>其中obj是对象的名称，prop是对象的属性，descripter是目标属性拥有的特性</p>
+                            <p>三者都是必须的，不能缺少</p>
+                            <p>其中第三个属性以对象的形式写{}</p>
+                            <p>value:设置属性的值，默认为undefined</p>
+                            <p>writabled：值是否可以重写（修改），默认false，如果为false就不可以重写</p>
+                            <p>enumerable:目标属性是否可以被遍历（枚举），默认false，如果false则不可以用keys遍历</p>
+                            <p>configurable：目标属性是否可以被删除或是可以再次修改特性，默认false，如果false，不可以用delete obj.prop删除</p>
+
+                            <p><b>后面会学Object.assign(obj1,obj2)将obj2浅拷贝给obj1</b></p>
+                        </li>
+                        <!-- 9.3模块 -->
+                        <!-- 9.4模块 -->
+                        <li>
+                            <h4>函数进阶</h4>
+                            <p><b>函数的定义</b></p>
+                            <p>1.自定义函数（命名函数）function fn(){}</p>
+                            <p>2.函数表达式（匿名函数）var fun = function(){}</p>
+                            <p>3.利用new Function('参数1','参数2','函数体')由于写法麻烦且效率低下，仅作了解，但是可以证明函数也是一个对象</p>
+                            <p>可以明白函数也是处于原型链之中，它的构造函数就是Function，它本身是Function的一个实例对象，可用__proto__返回原型再加constructor返回构造函数</p>
+
+                            <hr>
+                            <p><b>函数的调用</b></p>
+                            <p>1.普通函数 fn()/fn.call()</p>
+                            <p>2.对象的方法 var o = { sayhi:function(){}} o.sayhi()</p>
+                            <p>3.构造函数 function Star(){}; new Star()</p>
+                            <p>4.绑定事件函数btn.onclick = function(){}匿名函数</p>
+                            <p>5.定时器函数 setTimeout(function(){},1000)</p>
+                            <p>6.立即执行函数(function(){})()</p>
+                            <hr>
+
+
+                            <p class="red">this的指向</p>
+                            <p>基本属于谁调用，this就指向谁</p>
+                            <p>1.指向window</p>
+                            <p>2.指向所写的对象</p>
+                            <p>3.指向的是实例化的对象 var obj = new Star(),指向的就是obj</p>
+                            <p>4.指向的就是函数的调用者也就是btn这个按钮对象</p>
+                            <p>5.指向window</p>
+                            <p>6.指向window</p>
+                            <hr>
+
+
+                            <p><b>改变函数的指向</b></p>
+                            <p>call()、apply()、bind()</p>
+                            <p>前两者都会调用函数，call()中的参数用逗号分隔，apply()中的参数用数组方式储存</p>
+                            <p>bind()不会调用函数，其他基本于call一致，返回的是原函数的拷贝</p>
+                            <p><b>call常用于构造函数的继承</b></p>
+                            <p> 例如：function Son(){ Father.call(this)}</p>
+                            <p>这里的this指向son，然后将Father中this的指向改为Son</p>
+                            <p><b>apply常用于数学内置对象求最大值</b></p>
+                            <p>例如：var arr = [1,44,22,333,13]</p>
+                            <p>var max = Math.max.apply(Math,arr),这样就可以输出arr中的最大值</p>
+                            <p><b>bind()十分重要，常用于不需要立即调用，但是又想改变这个函数的this指向,例如在定时器、点击事件中使用</b></p>
+                            <p>例如：btn.onclick = function(){ this.disabled = true setTimeout(function(){},3000).bind(this)}</p>
+                            <p>通常定时器是指向window，如果要在点击事件中使用时，通常可以改成指向点击事件的调用者btn，而定时器在点击事件中这里就可以用bind(this)</p>
+                            <hr>
+
+
+                            <p><b>严格模式strict mode</b></p>
+                            <p>IE10以上才会支持，其他版本默认普通版本</p>
+                            <p>1.消除了javasctipt语法中的一些不合理的行为，比如不声明变量就使用</p>
+                            <p>2.消除代码运行的一些不安全之处，保证代码运行的安全</p>
+                            <p>3.提高编译器效率</p>
+                            <p>4.禁用了一些ECMScript的未来版本中可能定义的一些语法，为未来新版本的js做好铺垫，比如一些保留字如：class，extend不能作为变量名</p>
+                            <hr>
+
+
+                            <p><b>1.为脚本开启严格模式</b></p>
+                            <p>在所有语句之前放一个特定语句"use strict"</p>
+                            <p>可以直接写在所有js代码的最上面"use strict"/也可以写在立即执行函数中(function(){'use strict'})()</p>
+                            <p><b>2.为某个函数开启严格模式</b></p>
+                            <p>单独在函数体中写上'use strict'</p>
+                            <p>function(){'use strict'//该函数以下的代码都按照严格模式}</p>
+                            <hr>
+
+
+                            <p>严格模式下的变化</p>
+                            <p><b>1.变量规定</b></p>
+                            <p>正常模式下，如果一个变量没有声明就赋值，默认是全局变量，严格模式下会被禁用，必须先声明才能使用</p>
+                            <p>严格模式下严禁删除已经声明的变量</p>
+                            <p><b>2.严格模式下的this指向问题</b></p>
+                            <p>严格模式下全局作用域中的函数this指向的是undefined</p>
+                            <p>严格模式下构造函数不加new调用，this会报错</p>
+                            <p>但是定时器中的this还是指向window，事件对象还是指向事件的调用者</p>
+                            <p><b>3.函数变化</b></p>
+                            <p>不可以出现形参重名的问题</p>
+                            <p>函数必须声明在顶层，不允许在非函数的代码块内声明函数例如在if(){}和for(){}</p>
+                            <hr>
+
+
+                            <p><b>高阶函数（重点）</b></p>
+                            <p>函数可以作为参数传递（回调函数）</p>
+                            <p>function fn(a,b,callback){ console.log(a+b); callback&&callback()//如果有callback回调函数则执行}</p>
+                            <p><b>闭包函数(closure)</b></p>
+                            <p>局部变量所在的函数就是闭包函数</p>
+                            <p>作用：延伸变量的作用范围</p>
+                            <p>闭包指有权访问另一个函数作用域中变量的<u>函数</u>，也就是一个作用域可以访问另一个作用域的局部变量</p>
+                            <p>例如：function fn(){ var num = 10;<br> function fun(){<br> console.log(num)};<br> fun()<br>}fn()</p>
+                            <p>fn外部的作用域可以访问fn内部的局部变量</p>
+                            <p>比较好的写法function fn(){var num = 10; return function(){console.log(num)}}直接通过一个匿名函数返回</p>
+                            <P><a href="../html/js练习/js闭包和递归.html">闭包和递归的作用</a></P>
+                            <hr>
+                            <p><b>递归函数</b></p>
+                            <p>如果一个函数在内部可以调用其本身，那么这个函数就是递归函数</p>
+                            <p>也就是函数内部自己调用自己，这个函数就是递归函数</p>
+                            <p>由于递归很容易发生"栈溢出"错误(stack overflow)，所以必须加退出条件</p>
+                            <hr>
+                            <p><b>浅拷贝和深拷贝</b></p>
+                            <p>浅拷贝只是拷贝一层，更深层的对象级别的只拷贝引用</p>
+                            <p>深拷贝拷贝多层，每一层别的的数据都会拷贝</p>
+                            <p>浅拷贝：传统写法需要forin遍历对象，再用o[k] = obj[k]</p>
+                            <p>它的语法糖：Object.assign(o,obj),o为要拷贝的对象，obj为被拷贝的对象</p>
+                            <p>深拷贝：利用函数递归拷贝深层次的函数</p>
+                            <p>主要是复杂数据类型的问题，需要先进行数据类型判断，是否为数组，是否为对象</p>
+                            <p>在复杂数据类型中需要产生递归，再把当前的oldobj改为遍历产生的item</p>
+                            <p><img src="../img/深拷贝.png" alt=""></p>
+                            <p><b>注意：由于数组也属于对象，所以要写在判断对象的前面</b></p>
+                        </li>
+                        <!-- 9.4模块 -->
+
+                        <!-- 9.5模块 -->
+                        <li>
+                            <h4>正则表达式</h4>
+                            <p>正则表达式概述：主要用于表单验证、敏感词替换、字符串提取</p>
+                            <p>实际开发中一般式直接复制写好的正则表达式，例如：用户名/^[a-z0-9_-]{3,16}$/</p>
+                            <p><b>1.通过RegExp对象的构造函数创建</b></p>
+                            <p>var 变量名 = new RegExp(/表达式/) </p>
+                            <p><b>2.通过字面量创建</b></p>
+                            <p>var 变量 = /123/</p>
+                            <p>正则表达式不可以加引号，只要包含123测试结果都是true</p>
+                            <hr>
+                            <p><b>测试正则表达式</b></p>
+                            <p><img src="../img/常见正则表达式.png" alt=""></p>
+                            <p>regexObj.test(str)返回true或false</p>
+                            <p>1.regexObj是写的正则表达式</p>
+                            <p>2.str是我们要测试的文本</p>
+                            <p>3.就是检测str文本是否符合我们写的正则表达式规范</p>
+                            <p><b>特殊字符：元字符详见MDN/jQuery API</b></p>
+                            <p><b>边界符</b></p>
+                            <p>^ 表示匹配行首的文本（以谁开始）</p>
+                            <p>$ 表示匹配行尾的文本（以谁结束）</p>
+                            <p> var reg1 = /^abc/; //必须以adc开头</p>
+                            <p> var reg2 = /^abc$/; //必须是abc字符串才符合规范</p>
+                            <p>两个一起使用表示精确匹配</p>
+                            <p><b>字符类</b></p>
+                            <p>[ ] 表示有一系列字符可供选择，只要匹配其中一个就可以了</p>
+                            <p> var reg3 = /[abc]/; //只要包含有a或b或c其中一个就会返回true;例如adcd有包含abc就行</p>
+                            <p>var reg4 = /^[abc]$/; //三选一，只有是a或者b或者c这三个字符才返回true</p>
+                            <p>[-]方括号内短横线表示范围符号</p>
+                            <p>var reg5 = /^[a-z]$/; //a-z中任意字符都能返回true </p>
+                            <p><b>字符组合</b></p>
+                            <p>var reg6 = /^[a-zA-Z0-9_-]$/; //英文字母包括数字、下划线、短横线中任意字符都能返回true</p>
+                            <p>[^]表示取反的意思，不能和边界符^混淆</p>
+                            <p>var reg7 = /^[^a-zA-Z0-9]$/; //括号内^表示取反</p>
+                            <p><b>量词符</b></p>
+                            <p>* 相当于>=0可以出现0次或者多次</p>
+                            <p>var reg8 = /^a*$/;</p>
+                            <p>+ 相当于>=1可以出现1次或者多次</p>
+                            <p>var reg9 = /^a+$/;</p>
+                            <p>？相当于出现0次或者1次</p>
+                            <p>var reg10 = /^a?$/;</p>
+                            <p><b>{}重点掌握</b></p>
+                            <p>{n}就是匹配n次</p>
+                            <p>{n，}就是>=n次</p>
+                            <p>{n，m}就是最少n次，最多m次</p>
+                            <p><b>[ ]{ }配合使用</b></p>
+                            <p>例如：用户名/^[a-z0-9_-]{3,16}$/</p>
+                            <p>两者链接处不能有空格</p>
+                            <p><b>括号总结</b></p>
+                            <p>1.大括号 量词符号，里面表示重复的次数</p>
+                            <p>2.中括号 字符集合，匹配方括号内的任意字符</p>
+                            <p>3.小括号 表示优先级</p>
+                            <p><a href="https://c.runoob.com/">在线测试</a></p>
+                            <p>
+                                <table class="table">
+                                    <tr>
+                                        <th>预定类</th>
+                                        <th>说明</th>
+                                    </tr>
+                                    <tr>
+                                        <td>\d</td>
+                                        <td>匹配0-9之间的任意数字，相当于[0-9]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\D</td>
+                                        <td>匹配0-9之间的任意数字，相当于[^0-9]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\w</td>
+                                        <td>匹配任意的字母、数字和下划线,相当于[a-zA-Z0-9_]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\W</td>
+                                        <td>除任意的字母、数字和下划线,相当于[^a-zA-Z0-9_]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\s</td>
+                                        <td>匹配空格（包括换行符、制表符、空格符等），相当于[\t\r\n\v\f]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>\S</td>
+                                        <td>匹配非空格（包括换行符、制表符、空格符等），相当于[^\t\r\n\v\f]</td>
+                                    </tr>
+                                </table>
+                            </p>
+                            <p>正则里面的或者使用|表示，不是两个||</p>
+                            <p>座机号码验证/^\d{3}-\d{8}|\d{4}-\d{7}$/</p>
+                            <p>/^\d{3,4}-\d{7,8}$/</p>
+                            <p>表示010-12345678 或者0530-1234567</p>
+                            <hr>
+                            <p><b>replace()替换</b></p>
+                            <p>stringObject.replace(regexp/substr,replacement)</p>
+                            <p>1.第一个参数：被替换的字符串或者正则表达式</p>
+                            <p>2.第二个参数：被替换为的字符串</p>
+                            <p>3.返回值是一个替换完毕的新字符串</p>
+                            <p>var newStr = str.replace(/andy/, 'baby')</p>
+                            <p>/正则表达式/[swith]</p>
+                            <p>swith是值按照什么样的模式来匹配。有三种值</p>
+                            <p>g：全局匹配</p>
+                            <p>i：忽略大小写</p>
+                            <p>gi：全局匹配+忽略大小写</p>
+                        </li>
+                        <!-- 9.5模块 -->
+                        <!-- 9.6模块 -->
+                        <li>
+                            <h4>ES6语法</h4>
+                            <p><a href="../html/js练习/ES6新增语法.html">ES6新增语法</a></p>
+                            <p><b>let关键字</b></p>
+                            <p>块级作用域就是{ }包含的语句</p>
+                            <p><b>特点一：</b></p>
+                            <p>let声明的变量只在所在于的块级有效</p>
+                            <p>使用var声明的变量不具备块级作用域的特点</p>
+                            <p><b>好处：防止循环变量变成全局变量</b></p>
+
+                            <p><b>特点二</b></p>
+                            <p>不存在变量提升，需要声明变量后才能赋值</p>
+                            <p>语句更加严格规范</p>
+
+                            <p><b>特点三</b></p>
+                            <p>会形成暂时性死区</p>
+                            <p>在块级作用域生成的let变量会和当前的作用域绑定，不会受到全局变量var的影响</p>
+
+                            <hr>
+                            <p><b>const关键字</b></p>
+                            <p>声明常量，常量就是值（内存地址）不能变化的量</p>
+                            <p>特点：1.同样具有块级作用域</p>
+                            <p>2.声明常量时必须赋值,不赋值会报错Missing initializer in const declaration</p>
+                            <p>3.常量赋值后，值不能修改，修改也会报错Assignment to constant variable</p>
+                            <p>常量分为简单数据类型和复杂数据类型，如果是数组的修改数组下标a[0] = 123来成功修改</p>
+                            <p>但是a = [1,2]就不能修改</p>
+                            <P>4.一般常量使用大写（潜规则）</P>
+
+
+                            <p>let const var的区别</p>
+                            <p>
+                                <table class="table">
+                                    <tr>
+                                        <th>var</th>
+                                        <th>let</th>
+                                        <th>const</th>
+                                    </tr>
+                                    <tr>
+                                        <td>函数级作用域</td>
+                                        <td>块级作用域</td>
+                                        <td>块级作用域</td>
+                                    </tr>
+                                    <tr>
+                                        <td>变量提升</td>
+                                        <td>不存在变量提升</td>
+                                        <td>不存在变量提升</td>
+                                    </tr>
+                                    <tr>
+                                        <td>值可更改</td>
+                                        <td>值可更改</td>
+                                        <td>值不可更改</td>
+                                    </tr>
+                                </table>
+                            </p>
+                            <p><b>解构赋值</b></p>
+                            <p><b>数组解构</b></p>
+                            <p>ES6中允许从数组中提取值，按照对应位置，对变量赋值。对象也可以实现解构</p>
+                            <p>let[a,b,c] = [1,2,3]</p>
+                            <p>如果解构不成功，变量的值为undefined</p>
+                            <p>let[foo] = []; let [bar,foo] = [1]</p>
+                            <hr>
+                            <p><b>对象解构</b></p>
+                            <p>对象解构允许我们使用变量的名字匹配对象的属性 匹配成功将对象属性的值赋值给变量</p>
+                            <p>let person = { name:'lisi' , age:30 , sex:'男'}</p>
+                            <p>通过变量解构 let {name,age,sex} = person</p>
+
+                            <p>变量解构的直接写法：</p>
+
+                            <p>let {name:myname,age:myage,sex:mysex} = person</p>
+                            <p class="red">将person的name属性赋值给myname变量，注意这里只能调用myname变量</p>
+                            <p>console.log(myname,myage,mysex)通过调用myname对象进行输出</p>
+                            <hr>
+                            <p><b>箭头函数</b></p>
+                            <p>( )=> { },用来简化函数定义语法</p>
+                            <p>()用来放置形参</p>
+                            <p>{}用来放置函数体</p>
+                            <p>通常我们会把箭头函数赋值给一个变量，例如：</p>
+                            <p>const fn = () => {}</p>
+                            <p>如果函数体中只有一句代码，并且代码的执行结果就是返回值，可以省略大括号</p>
+                            <p>function sum(num1,num2){ return num1+num2}</p>
+                            <p>可以通过箭头函数简写为</p>
+                            <p>const sum = (num1,num2) => num1+num2</p>
+                            <p>同样的形参只有一个，可以省略小括号</p>
+                            <p>const fn = v => v</p>
+                            <p><b>箭头函数的this指向</b></p>
+                            <p>箭头函数不绑定this关键字，箭头函数中的this，指向的是函数定义位置的上下文this</p>
+                            <p>即父级作用域中的this指向谁，箭头函数中的this就指向谁</p>
+                            <p>对象不能直接产生作用域，对象中的方法实际上是被定义在全局作用域下</p>
+                            <p><img src="../img/箭头函数的this指向.png" alt=""></p>
+                            <p><b>特点</b></p>
+                            <p>1.不能作为构造实例化对象</p>
+                            <p>2.不能使用arguments变量</p>
+                            <p>3.是静态的，this始终指向函数声明时所在作用域下的this的值</p>
+                            <p>4.箭头函数的简写：</p>
+                            <p>（1）省略小括号，当形参有且只有一个的时候</p>
+                            <p>（2）省略花括号，当代码体只有一条语句的时候</p>
+                            <p><b>实际应用场景：</b></p>
+                            <p>（1）箭头函数适合与this无关的回调。定时器，数组的方法回调</p>
+                            <p>（2）箭头函数不适合与this相关的回调。 事件的回调函数，对象的方法</p>
+
+
+                            <hr>
+                            <p><b>函数参数默认值</b></p>
+                            <p>ES6语法中可以给形参设置默认值，例如：</p>
+                            <p>function add(a,b,c=10){return a+b+c};</p>
+                            <p>let result = add(1,2)//虽然没有给c的值，但是可以通过默认值进行计算</p>
+                            <p>console.log(result)</p>
+                            <p>1.形参设置初始值，具有默认值的参数，一般位置要靠后（潜规则）</p>
+                            <p>function connect({host,username,password,port ='3306'}){console.log(host,user,password,port)}</p>
+                            <p>connect({host:'localhost',username:'root',password:'root'})</p>
+                            <p>2.与解构赋值结合</p>
+
+                            <p><b>剩余参数</b></p>
+                            <p>剩余参数语法允许我们将一个不定数量的参数表示为一个数组</p>
+                            <p>由于箭头函数中不能使用剩余参数</p>
+                            <p>用...args来表示接受所有的形参且以数组的方式储存</p>
+                            <p>const sum = (...args)=>{let total = 0;args.forEach(item => total += item);return total}</p>
+                            <p>console.log(sum(10, 20))</p>
+                            <p>这样就可以接受多个不确定数量的形参</p>
+                            <p><b>剩余参数配合解构</b></p>
+                            <p>let students = ['wangwu','zhangsan','lisi']</p>
+                            <p>let [...s1] = students</p>
+                            <p>console.log(s1)</p>
+
+
+                            <hr>
+                            <p><b>扩展运算符</b></p>
+                            <p>扩展运算符可以将数组或者对象转换为用逗号分隔的参数序列</p>
+                            <p>let ary = [1,2,3];</p>
+                            <p>...ary //1,2,3</p>
+                            <p>console.log(...ary)// 1 2 3</p>
+                            <p>由于console.log中的参数同样用，分隔，这里就可以直接使用...ary</p>
+                            <p><b>实际应用</b></p>
+                            <p>扩展运算符可以用于<b>合并数组</b></p>
+                            <p>let arr1 = [1,2,3]; let arr2 = [4,5,6]</p>
+                            <p>let arr3 = [...arr1,...arr2]由于数组中也是用，分隔;用...arr分选后就可以再用[]从新变为数组</p>
+                            <p>也可以使用push()方法</p>
+                            <p>arr1.push(...arry2)</p>
+
+
+                            <hr>
+                            <p><b>将类数组或者可便利对象转换为真正的数组</b></p>
+                            <p>由于伪数组不能使用数组的方法</p>
+                            <p>var oDivs = doccument.getElementsByTagName('div')</p>
+                            <p>var ary = [...oDivs]</p>
+                            <p>htmlcollection转换成array</p>
+                            <p>这样就可以将伪数组转换为真正的数组</p>
+                            <p>然后就可以调用数组的方法ary.push('a')</p>
+
+                            <hr>
+                            <p>构造函数方法：Array.from()</p>
+                            <p><b>将类数组或可遍历对象转换为真正的数组</b></p>
+                            <p>var arrayLike = {"0":"张三","1":"李四","2":"王五","length":3}</p>
+                            <p>var ary = Array.from(arrayLike,item => item*2)</p>
+                            <p>注意这里必须要加"length":3不然会返回空数组</p>
+                            <p>第一个参数选择对象，可以将该对象转换为数组</p>
+                            <p>还可以接受第二个参数，类似于数组的map方法</p>
+                            <p>map方法会将原先的数组产生一个新的数组，函数体是参数（数组的值）进行运算，返回值是一个映射，不会对原数组造成影响</p>
+                            <hr>
+                            <p><b>find()方法</b></p>
+                            <p>用于找出第一个符合条件的数组成员，如果没有找到返回undefined，找到的话就是返回查找的元素</p>
+                            <p>有点类似some，但是some输出的是布尔类型，但是这里输出是个对象</p>
+                            <p>let ary = [{id:1,name='张三'},{id:2,name:'李四'}]</p>
+                            <p>let target = ary.find((item,index)=>item.id == 2)</p>
+                            <p>查找数组中id为2的数组成员</p>
+
+                            <p><b>findIndex()方法</b></p>
+                            <p>用于找出第一个符合条件的数组成员的位置，如果没有找到返回-1，找到的话就是返回查找元素的索引号</p>
+                            <p>let ary = [10,15,20]</p>
+                            <p>let index = indexary.findIndex(item => item>15)</p>
+                            <p>这里就返回20的索引号2</p>
+
+                            <p><b>includes()方法</b></p>
+                            <p>表示某个数组是否包含给定的值，返回布尔值</p>
+                            <p>let arr = [1,2,3]</p>
+                            <p>let result = ary.includes('a')</p>
+                            <p>返回结果会是true</p>
+
+                            <hr>
+                            <h4>字符串扩展方法</h4>
+                            <p><b>模板字符串</b></p>
+                            <p>模板字符串可以解析变量，且可以换行，也可以调用函数，返回函数的返回值</p>
+                            <p>let a = `这是模板字符串`</p>
+                            <p>let name = `ada${a}`</p>
+
+                            <p><b>starsWith()和endswith()</b></p>
+                            <p>starsWith()表示参数字符串是否在原字符串的头部，返回布尔值</p>
+                            <p>endswith()表示参数字符串是否在原字符串的尾部，返回布尔值</p>
+
+                            <p><b>repeat()</b></p>
+                            <p>repeat方法表示将原字符串重复n次，返回一个新的字符串</p>
+                            <p>'x'.repeat(3)//'xxx'</p>
+                            <p>'hello'.repeat(2)//'hellohello'</p>
+
+                            <hr>
+                            <p><b>Set数据结构</b></p>
+                            <p>ES6提供了新的数据结构set，它类似于数组，但是成员的值都是唯一的，没有重复的值</p>
+                            <p>Set本身是一个构造函数，用来生成Set数据结构</p>
+                            <p>const s = new Set()</p>
+                            <p>Set函数也可以接受一个数组作为参数，用来初始化</p>
+                            <p>const set = new Sew([1,2,3,4,5])</p>
+                            <p>可以用set.size返回set数据结构中存储了几个值</p>
+                            <p>由于其本身不能重复的特性，可以用来做数组去重</p>
+                            <p>const set = new Set(['a','a','b','b'])//去除重复值</p>
+                            <p>const ary = [...set]//再用[...]转换为数组</p>
+
+                            <p><b>实例方法</b></p>
+                            <p>add(Value):添加某个值，返回Set结构本身</p>
+                            <p>delete(Value):删除某个值，返回一个布尔值，表示是否删除成功</p>
+                            <p>has(Value):返回一个布尔值，表示该值是否为Set成员</p>
+                            <p>clear(Value):清除所有成员，没有返回值</p>
+
+                            <p>const s = new Set()</p>
+                            <p>s.add(1).add(2).add(3)//向set中添加值</p>
+                            <p>s.delete(2)//删除set结构中的2值</p>
+                            <p>s.has(1)//表示set结构中是否有1这个值，返回布尔值</p>
+                            <p>s.clear()//清除set结构中的所有值</p>
+
+                            <p><b>遍历set结构</b></p>
+                            <p>set结构的实例和数组一样，也拥有forEach方法，用于对每个成员执行某种操作，没有返回值</p>
+                            <p>s.forEach(value => console.log(value))</p>
+
+                        </li>
+                        <!-- 9.6模块 -->
+
+
+
+
+
+                    </ul>
+                </div>
+                <!-- 第九部分 -->
+            </div>
+            <!-- page2 -->
+
+            <!-- page3 -->
+            <div id="page3" class="page">
+                <!-- 第十部分 -->
+                <div id="10" class="content">
+                    <h2>AJAX 操作方法</h2>
+                    <ul>
+                        <!-- 10.1模块 -->
+                        <li>
+                            <h4>原生AJAX</h4>
+                            <p><b>简介</b></p>
+                            <p>AJAX就是异步的JS和XML</p>
+                            <P>通过AJAX可以在浏览器中向服务器发送异步请求，最大的优势：<b>无刷新获取数据</b></P>
+                            <p>AJAX不是新的编程语言，而是将一种现有的标准组合在一起使用的新方式</p>
+
+
+                            <hr>
+                            <p><b>AJAX的优缺点</b></p>
+                            <p>优点：</p>
+                            <p>（1）可以无需刷新页面而与服务器端进行通信</p>
+                            <p>（2）允许你根据用户事件来更新部分页面内容</p>
+                            <p>缺点：</p>
+                            <p>（1）没有浏览历史，不能回退</p>
+                            <p>（2）存在跨域问题（同源）->a.com对b.com发出AJAX请求会默认不成立</p>
+                            <p>（3）SEO不友好（搜索引擎优化），用爬虫爬不到商品的数据</p>
+
+                            <hr>
+                            <p><b>XML简介</b></p>
+                            <p>XML可扩展标记语言，被设计用来传输和储存数据</p>
+                            <p>XML和HTML相似，不同的是HTML中都是预定义标签，而XML没有预定义标签，全是自定义标签，用来表示一些数据</p>
+                            <p>以前用于AJAX的数据在服务器端和客户端传输，现在已经被json取代了</p>
+
+
+                            <hr>
+                            <p><b>HTTP简介</b></p>
+                            <p>超文本传输协议，协议规定了浏览器和万维网服务器之间互相通信的规则</p>
+                            <p>请求报文</p>
+                            <p>行：GET /s？ie=UTF-8 (URL地址) HTTP/1.1(HTTP协议的版本)</p>
+                            <p>头：Host: atguigu.com /Cookie:name = guigu/Content-type:application/x-www-form-urlencoded/User-Agent:chrome 83</p>
+                            <p>空体</p>
+                            <p>体：username = admin&password=admin</p>
+                            <p>响应报文</p>
+                            <p>行：HTTP/1.1(HTTP协议的版本) 404（响应状态码）找不到(响应状态字符串) </p>
+                            <p>头：和请求头基本一样 Content-Type /Content-length /Content-encoding</p>
+                            <p>空行</p>
+                            <p>体：&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</p>
+                            <p>平时在我们向服务器端发送请求的时候是发送给服务器端请求报文，返回的给客户端就是响应报文</p>
+
+                            <p>查看报文</p>
+                            <p>谷歌浏览其中先F12，选择Sources右边的Network，点击对应的name就会出现</p>
+                            <p>里面分别由General、Response Headers响应头、Request Headers请求头、Query String Parameters组成</p>
+                            <p>点击右侧的view parsed可以查看源代码</p>
+                            <hr>
+                            <p><b>Express框架</b></p>
+                            <img src="../img/express框架介绍.png" alt="">
+                            <p>点击在集成终端中打开，在终端中输入npm init --yes</p>
+
+                            <img src="../img/express链接服务器端口.png" alt="">
+                            <p>在express文件夹打开终端，输入node （TAB键）命令行</p>
+                            <hr>
+                            <p><b>AJAX案例准备</b></p>
+                            <p>
+                                <a href="../html/原生AJAX/1-GET.html">原生AJAX案例</a>
+                            </p>
+                            <p>点击发送请求，不刷新页面，在div中做呈现</p>
+                            <p>由于使用同一个端口，要把之前的node释放：ctrl+c</p>
+                            <p>分为页面准备（设置页面样式）和服务准备（设置服务端口）</p>
+                            <p>在AJAX中添加传递参数</p>
+                            <p>引入AJAX基本分4步(以发送GET请求为例)</p>
+                            <p>// 1.创建对象 const xhr = new XMLHttpRequest();</p>
+                            <p>// 2.初始化 设置请求方法和url xhr.open('GET', 'http://127.0.0.1:8081/server?a=100&b=200&c=200')</p>
+                            <p>// 3.发送 xhr.send();</p>
+                            <p>// 4.事件绑定 处理服务端返回的结果 xhr.onreadystatechange = () => {}</p>
+                            <p>// 4.1 判断事件发送是否结束 if (xhr.readyState === 4) {} //readystate是xhr对象中的属性，表示状态0 1 2 3 4</p>
+                            <p>0 － （未初始化）还没有调用send()方法</p>
+                            <p>1 － （载入）已调用send()方法，正在发送请求</p>
+                            <p>2 － （载入完成）send()方法执行完成，已经接收到全部响应内容</p>
+                            <p>3 － （交互）正在解析响应内容</p>
+                            <p>4 － （完成）响应内容解析完成，可以在客户端调用了</p>
+                            <p>// 4.2 判断响应状态码 if (xhr.status >= 200 && xhr.status &lt;= 300) {}</p>
+                            <p> //判断响应状态码 200 404 403 //2xx 就表示成功</p>
+                            <hr>
+                            <p><b>发送get请求和post请求的区别</b></p>
+                            <p>主要在2.初始化和3.发送阶段有所区别</p>
+                            <p> // 2.初始化 设置请求方法和url xhr.open('POST', 'http://127.0.0.1:8081/server')</p>
+
+
+
+                            <p> // 3.发送数据和get不同不再设置url中设置 xhr.send('a=100&b=200&c=300');</p>
+                            <p>发送数据的位置不同，get在open的url中添加，post在send中添加</p>
+
+
+
+                            <p><b>设置请求头</b></p>
+                            <p> //设置请求头,这里不用去记，content-type是用来设置请求体内容的类型，后面一长串表示参数查询字符串，是固定写法</p>
+                            <p> // 简要的说本句就是告诉服务器端该请求是一个post请求，防止被服务器认为是get而报错。</p>
+                            <p> xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')</p>
+                            <p> //设置自定义的请求头名称,需要在响应中进行修改，post改为all（可以接受任何请求），添加一个设置响应头</p>
+                            <p> xhr.setRequestHeader('name', 'luojing')</p>
+                            <hr>
+
+                            <p><b>服务端响应JSON数据</b></p>
+                            <p><a href="https://www.runoob.com/js/js-json.html">json数据介绍</a></p>
+                            <p>在创建路由规则中，定义一个响应JSON数据 const data = {name:'atguigu'}</p>
+                            <p>由于response.send()只能接受字符串</p>
+                            <p>所以对数据进行一个转换 let str = JSON.stringify(data)</p>
+                            <p>然后在事件绑定中转换回来 </p>
+                            <p>手动转换 let data = JSON.parse(xhr.response)</p>
+                            <p>自动转换 设置响应体数据类型</p>
+                            <p>这样就可以在客户端得到一个由服务器端响应的JSON数据了</p>
+                            <hr>
+                            <p><b>AJAX-nodemon自动重启工具</b></p>
+                            <p>是一个工具，可以帮助我们在服务端文件内容修改时自动重启node</p>
+                            <p>只要在命令行中npm install -g nodemon</p>
+                            <p>在下载完该工具后就可以用nodemon来启动js了（原本是node server.js）</p>
+                            <p>这样启动的服务端就可以在更新是自动重启服务</p>
+                            <hr>
+                            <p><b>IE缓存问题</b></p>
+                            <p>IE浏览器会对AJAX请求做一个缓存</p>
+                            <p>下一次对服务器发送请求的时候返回的是缓存的数据，如果是时效性特别强的数据，无法返回最新的数据</p>
+                            <p><b>解决办法</b></p>
+                            <p>xhr.open('GET', 'http://127.0.0.1:8081/ie?t=' + Date.now()) //重点，主要修改这里</p>
+                            <p>由于每次点击的时间戳是不一样的所以可以在open中添加一个?t=' + Date.now()</p>
+                            <p>获取不同的时间戳，这样子就不会走缓存了</p>
+                            <hr>
+                            <p><b>超时与网络异常问题</b></p>
+                            <p><b>网络超时的设置</b></p>
+                            <p>在客户端设置xhr.timeout = 2000,表示如果发出过了2秒没有响应就取消发送（在open之前设置）</p>
+                            <p>然后再服务端设置定时器3秒返回，来模拟响应超时，这样就会发现取消了发送请求</p>
+                            <p>同样的也可以设置一个超时的回调函数 xhr.ontimeout = () => { alert('网络异常，请稍后再试') }
+                            </p>
+
+                            <p><b>网络异常的回调设置</b></p>
+                            <p> xhr.addEventListener('error', () => { alert('你的网络似乎出了一些问题') })</p>
+                            <p>由于js无法模拟，就可以在谷歌浏览器中模拟</p>
+                            <p><img src="../img/模拟网络异常.png" alt=""></p>
+
+                            <p>手动取消请求，只要在触发的事件中添加xhr.abort()即可，它是AJAX的的一个方法，调用就可以取消请求</p>
+                            <p>而遇到重复发送请求的情况，就去除原先的，防止接受重复请求</p>
+                            <p>具体就是加一个标识变量isSending = false,当发送请求时变为true，当readystate变为4时变为false</p>
+                            <p> if (isSending) { xhr.abort() } //如果正在发送就取消该请求，创建一个新的请求</p>
+                            <hr>
+                        </li>
+                        <!-- 10.1模块 -->
+
+
+                        <!-- 10.2模块 -->
+                        <li>
+                            <h4>ajax方法、axios和fetch</h4>
+                            <p><b>jquery-AJAX</b></p>
+                            <P>写法十分简单$.get('http://127.0.0.1:8081/jquery-server', { a: 100, b: 200 }, function(data) { console.log(data) },'json')</P>
+                            <p>先写请求类型$.get/post</p>
+                            <p>()内一共四个参数第一个是url地址，第二个是参数以对象的方式写，第三个是回调函数，第四个是响应体的格式数据</p>
+
+                            <p><b>jquery的通用型方法AJAX</b></p>
+                            <p>在绑定事件中的回调函数里写 $.ajax({})里面填写对象</p>
+                            <p>里面填写对象属性： url: 'http://127.0.0.1:8081/jquery-server',</p>
+                            <p>data: { a: 100, b: 200 } 参数</p>
+                            <p> //请求类型 type: 'GET',</p>
+                            <p> //响应体结果 datatype:'json'</p>
+                            <p> //成功的回调 success: function(data) { console.log(data) } </p>
+                            <p> //设置超时时间 timeout: 2000,</p>
+                            <p> //失败的回调 error: function(data) { console.log('出错了') }</p>
+                            <p>详细的设置同样可以参考
+                                <a href="https://jquery.cuishifeng.cn/jQuery.Ajax.html">jQuery API 中文文档</a>
+                            </p>
+                            <hr>
+
+                            <p><b>AJAX-Axios</b></p>
+                            <p><a href="../html/原生AJAX/fetch-AJAX/fetch.html">案例</a></p>
+                            <p>目前前端最热门的AJAX工具库，vue和react都在用</p>
+                            <p>在使用前要先导入script，CDN文件，由于原生的axios在国外，可以选择BootCDN</p>
+                            <P>&lt;script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.js"&gt;</script>
+                            </P>
+                            <p>//配置baseURL axios.defaults.baseURL = 'http://127.0.0.1:8081'</p>
+                            <p>后面的地址就可以只写后面的就行</p>
+                            <p> axios.get('/axios-server', { //url参数 params: { id: 100, vip: 7 }, //请求头信息 headers: { name: 'luojing', age: 20 } })
+                            </p>
+                            <p><img src="../img/axios的get和post请求.png" alt=""></p>
+                            <p>axios()函数基本与jquery的$.ajax()方法类似</p>
+                            <p>但是写法更加直观且方便，两者类型的写法不同</p>
+                            <p>axios为 method:'POST',data:为请求体</p>
+                            <p>$.ajax()为 type:'POST',data:为url参数</p>
+
+                            <p><b>fetch函数</b></p>
+                            <p>和axios语法类似，返回的是返回的结果是一共promise对象</p>
+                            <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch">详细介绍</a></p>
+                            <hr>
+                            <p><b>同源策略</b></p>
+                            <p>协议、域名、端口号必须完全相同才算满足同源策略</p>
+                            <p>违背同源策略就是跨域</p>
+                            <p>具体写法：在服务端设置一个sendFile跳转到主页，然后后面的客户端便是满足同源策略</p>
+                            <p>后面的get请求可以不用写允许跨域，并且open的url可以简写</p>
+                            <p><b>如何解决跨域问题</b></p>
+                            <p><b>1.JSONP是什么</b></p>
+                            <p>JSONP是一个非官方的跨域解决方案，只支持get请求</p>
+                            <p><b>2.JSONP如何工作的</b></p>
+                            <p>在页面中有一些标签天生具有跨域能力，例如img link iframe script</p>
+                            <p>JSONP就是利用script标签的跨域能力来发送请求的</p>
+                            <p><b>3.JSONP的使用</b></p>
+                            <p>动态创建一个script标签：var script = document.createElement('script')</p>
+                            <p>设置script的src，设置回调函数：script.src = "http://locallhost:3000/testAJAX?callback=abc"</p>
+                            <p>或者src直接链接到端口 script.src = 'http://127.0.0.1:8081/check-username'</p>
+                            <p>document.body.append(script)最终不要忘记在最后添加节点</p>
+                            <hr>
+                            <p><b>设置CORS响应头实现跨域</b></p>
+                            <p> //设置响应头 设置允许跨域 response.setHeader('Access-Control-Allow-Origin', '*')</p>
+                            <p>扩展</p>
+                            <p>//设置响应头 设置允许请求头自定义命名 response.setHeader('Access-Control-Allow-Headers', '*')</p>
+                        </li>
+                        <!-- 10.2模块 -->
+                    </ul>
+                </div>
+                <!-- 第十部分 -->
+
+                <!-- 第十一部分 -->
+                <div id="11" class="content">
+                    <h2>Promise</h2>
+                    <ul>
+                        <!-- 11.1模块 -->
+                        <li>
+                            <h4>promise介绍和基本使用</h4>
+                            <p><b>promise是什么</b></p>
+                            <p>promise是ES6规范的技术，是异步编程的新解决方案</p>
+                            <p>从语法上来说：promise是一个构造函数</p>
+                            <p>从功能上来说：promise对象用来封装一个异步操作并可以获取其成功/失败的结果值</p>
+                            <hr>
+                            <p><b>异步编程</b></p>
+                            <p>包括但不限于:</p>
+                            <p> js 文件操作、 数据库操作、AJAX、setTimeout</p>
+                            <p>旧的解决方案依靠的就是单纯的回调函数</p>
+                            <p>例如$.get('/server',(data)=>{}),setTimeout(()=>{},2000)</p>
+                            <p>promise：启动异步任务=>返回promise对象=>给promise对象绑定回调函数（甚至可以在异步任务结束后指定/多个）</p>
+                            <p><b>promise最重要的优点：支持链式调用，可以解决回调地狱问题</b></p>
+                            <p>1.什么是回调地狱问题？</p>
+                            <p>回调函数嵌套调用，外部回调函数异步执行的结果是嵌套的回调执行的条件</p>
+                            <p>2.回调地狱的缺点?</p>
+                            <p>不便于阅读</p>
+                            <p>不便于异常处理</p>
+                            <p>3.解决方案</p>
+                            <p>promise链式调用</p>
+                            <p><a href="../html/promise/promise初体验.html">promise案例1</a></p>
+                            <p>基本写法 const p = new Promise(resolve,reject)=>{
+                                <br>//添加一个判断
+                                <br>if(){resolve(n)////将promise对象的状态设置为成功}
+                                <br>else{ reject(n) //将promise对象的状态设置为失败}
+                                <br> }
+                            </p>
+                            <p>在写完对象后添加回调函数</p>
+                            <p>p.then((value)=>{},(reason)=>{})</p>
+                            <p> //调用then方法,第一个参数是对象成功时的回调,里面的参数是成功时的数值，第二个参数时对象失败时的回调，里面的参数是失败的数值</p>
+                            <hr>
+
+                            <p><b>promise-fs模块</b></p>
+                            <p><a href="../html/promise/2-Promise实践练习-fs模块.js">实践练习</a></p>
+                            <p>fs模块引入需要node.js的环境</p>
+                            <p>const fs = require('fs'); // 引入fs模块</p>
+                            <p> let p = new Promise((resolve, reject) => {
+                                <br> fs.readFile('./resource/content.txt', (err, data) => { if (err) { reject(err) } resolve(data) }) })
+                            </p>
+                            <p>由于原先需要输入两个参数err，data对应失败和成功的数据，可以通过promise的两个回调resolve和reject分别对应</p>
+                            <p>
+                                p.then(value => { console.log(value.toString()) }, reason => { console.log(reason) })
+                            </p>
+                            <hr>
+                            <p><b>node.js的内置方法util.promisify方法</b></p>
+                            <p>属于util模块，//引入util模块 const util = require('util')</p>
+                            <p>以(err,value)=>...回调作为最后一个参数，并返回一个返回promise的版本</p>
+                            <p>
+                                <a href="http://nodejs.cn/api/util.html#util_custom_promisified_functions">教程网站</a>
+                            </p>
+                            <p><b>promise的状态改变（重点！！！）</b></p>
+                            <p>promise的状态：实例对象中的一个属性 PromiseState</p>
+                            <p>resolved/fullfilled：成功</p>
+                            <p>rejected：失败的</p>
+                            <p>pending：未决定的</p>
+                            <p>说明：只有这两种，且一个promise对象只能改变一次，无论变为成功还是失败，都会有一个结果数据</p>
+                            <p>成功的结果数据一般称为value，失败的结果数据一般称为reason</p>
+                            <P>状态只能由未决定变为失败或成功，成功和失败之间不能互相转变</P>
+
+                            <p><b>promise对象的值</b></p>
+                            <p>实例对象中的另一个属性</p>
+                            <p>保存着异步任务成功或者失败的结果</p>
+                            <p>resolve()和reject()</p>
+                            <p>调用then()方法，返回的结果也是一个新的promise对象</p>
+                            <hr>
+                            <p><b>API</b></p>
+                            <p>Promise的构造函数Promise((resolve,reject)=>{})</p>
+                            <p>里面的执行器(resolve,reject)=>{}是在promise中内部立即<b>同步调用,放在主线程中</b>，不会到异步的队列中</p>
+
+                            <p><b>promise.prototype.then方法:(onResolve,onReject)=>{}</b></p>
+
+                            <p><b>promise.prototype.catch方法:(onReject)=>{}</b></p>
+                            <p>catch方法只能调用失败的函数</p>
+                            <p>then和catch的区别：</p>
+                            <p>catch只是一个语法糖而己 还是通过then来处理的，then的第二个参数和catch捕获错误信息的时候会就近原则，如果是promise内部报错，reject抛出错误后，then的第二个参数和catch方法都存在的情况下，只有then的第二个参数能捕获到，如果then的第二个参数不存在，则catch方法会捕获到。
+                            </p>
+                            <p><img src="../img/catch和then.png" alt=""></p>
+                            <p><b>resolve()方法和reject()方法</b></p>
+                            <p>resolve()方法</p>
+                            <p>如果传入的参数为非promise类型对象，则返回的结果为成功的promise对象</p>
+                            <p>如果传入的参数为promise对象，则参数的结果决定了resolve的结果</p>
+                            <p>reject()方法</p>
+                            <p>与resolve相反都为失败</p>
+
+                            <p><b>promise.all方法(promises)=>{}</b></p>
+                            <p>promise包含n个promise的数组</p>
+                            <p>返回一个新的promise，只有所有的promise都成功才成功，只要有一个失败就直接失败</p>
+
+                            <p><b>promise.race方法(promises)=>{}</b></p>
+                            <p>promise包含n个promise的数组</p>
+                            <p>返回一个新的promise，第一个完成的promise的结果状态就是最终的结果状态</p>
+                            <p>谁先改变状态就保存谁的值</p>
+                            <hr>
+                            <p>2.一个promise对象指定多个成功/失败回调函数，都会调用吗？</p>
+                            <p>当promise改变为对应状态时都会调用</p>
+                            <p>3.改变promise状态和指定回调函数谁先谁后</p>
+                            <p>一般执行顺序指定回调=>改变状态=>执行回调</p>
+                            <p>都有可能，正常情况下时先指定回调再改变状态(在执行器中先添加异步任务再调用resolve/reject)，但也可以先改变状态再指定回调</p>
+                            <p>(1)在执行器中直接调用resolve()/reject()</p>
+                            <p>(2)延迟更长时间才调用then()</p>
+                            <p><b>什么时候才能得到数据？</b></p>
+                            <p>(1)如果先指定的回调，那当状态发生改变时，回调函数就会调用，得到数据</p>
+                            <p>(2)如果先改变的状态，那当指定回调时，回调函数就会调用，得到数据</p>
+                            <hr>
+                            <p><b>串联多个任务</b></p>
+                            <p>可以在then后面不断添加then形成串联多个任务，但是后一个then需要前一个then有promise类型对象的返回值，</p>
+                            <p>非promise对象会直接传给下一个then，并且状态为resolve，没有返回值下一个then会返回undefined</p>
+                            <p><b>这样就可以形成链式调用，用于规避回调地狱</b></p>
+                            <hr>
+                            <p><b>promise异常穿透</b></p>
+                            <p>当使用promise链式调用的时候，可以在最后指定失败的回调</p>
+                            <p>前面任何操作出了异常，都会传到最后失败的回调中处理</p>
+                            <p><b>中断promise链</b></p>
+                            <p>有且只要一种方式，return new Promise(()=>{})返回一个pending状态下的promise对象</p>
+                            <hr>
+                            <p><b>自定义（手写）promise</b></p>
+                            <p>
+                                <a href="../html/promise/promise.js">手写promise代码</a>
+                            </p>
+
+                            <hr>
+                            <p><b>async和await</b></p>
+                            <p>async function main(){} </p>
+                            <p>let p = await new Promise()</p>
+                            <p><b>async函数</b></p>
+                            <p>1.async函数的返回结果为promise对象</p>
+                            <p>2.promise对象的结果由async函数执行的返回值决定</p>
+
+                            <p><b>await表达式</b></p>
+                            <p>await右侧表达式一般为promise对象，但也可以是其他的值</p>
+                            <p>1.如果表达式是promise对象，await反水的是promise成功的值</p>
+                            <p>2.如果表达式是其他值，直接将此值作为await的返回值</p>
+                            <p><b>注意</b></p>
+                            <p>await必须写在async函数中,但是async函数中可以没有await</p>
+                            <p>如果await的promise失败了，就会抛出异常，需要通过try...catch捕获处理</p>
+                            <hr>
+                            <p><b>宏队列与微队列（任务）</b></p>
+                            <p>主线程执行函数（栈），执行完成后再执行异步执行函数</p>
+                            <p>异步执行函数（分线程）分为两个不同的队列：宏队列和微队列</p>
+                            <p>宏队列：dom事件回调，ajax回调，定时器回调,I/O</p>
+                            <p>微队列：promise回调(then/catch/finally)，mutation回调</p>
+                            <p>1）、宏任务队列中存在微任务的话，那么就执行所有的微任务</p>
+                            <p>2）、微任务都执行完之后，执行下一个宏任务</p>
+                            <p><img src="../img/宏任务和微任务.jpg" alt=""></p>
+                        </li>
+                        <!-- 11.1模块 -->
+                    </ul>
+                </div>
+                <!-- 第十一部分 -->
+
+                <!-- 第十二部分 -->
+                <div id="12" class="content">
+                    <h2>vue基础</h2>
+                    <ul>
+                        <!-- 12.1模块 -->
+                        <li>
+                            <p><a href="https://cn.vuejs.org/v2/guide/">学习网站</a></p>
+                            <p><a href="../vue/vue学习.html">案例制作</a></p>
+                            <p><b>el:挂载点</b></p>
+                            <p>通过css选择器设置vue管理的元素</p>
+                            <p>作用范围：命中的元素以及内部后代元素</p>
+                            <p>css大多数选择器都可以使用，但是单标签和body、html无法使用</p>
+                            <p>&lt;div id = "app">{{message}}&lt;/div></p>
+                            <p>var app = new Vue({el:"#app",data:{message:"替换的内容"}})</p>
+                            <p><b>data:数据对象</b></p>
+                            <p>vue中用到的数据定义再data中</p>
+                            <p>data中可以写复杂数据类型</p>
+                            <p>渲染复杂数据类型的数据时，遵循js语法即可，obj.属性名，arr[索引号]</p>
+                            <p><b>methods:数据事件</b></p>
+                            <p>书写function等，方法内部通过this关键字从data中获取数据。这里不建议使用箭头函数</p>
+                            <hr>
+                            <p><b>vue指令</b></p>
+                            <p>指的是v-开头的一组特殊语法</p>
+                            <p>1.v-text</p>
+                            <p>设置标签的文本值，相当于innertext</p>
+                            <p>不同于插值表达式{{ }}，v-text会将设置该属性的标签中的文本值都替换</p>
+                            <p>2.v-html</p>
+                            <p>相当于设置标签的innerHTML，如果设置的是普通文本和v-text一样，</p>
+                            <p>但是v-html可以解析html标签</p>
+                            <p>3.v-on</p>
+                            <p>为元素绑定事件，一般案例v-on:click=""</p>
+                            <p class="red">它的语法糖是@click=""</p>
+                            <p>传递自定义参数，@click="fun(p1,p2)"</p>
+                            <p>methods:{ fun:function(p1,p2){}}</p>
+                            <p>事件修饰符，@keyup键盘触发事件</p>
+                            <p>一般来说回车键是触发的条件，那就可以改成@keyup.enter</p>
+                            <p>
+                                <a href="https://cn.vuejs.org/v2/api/#v-on">详细网址</a>
+                            </p>
+                            <p><b>计数器案例</b></p>
+                            <p><a href="../vue/vue案例-计数器.html">链接</a></p>
+                            <hr>
+                            <p>4.v-show</p>
+                            <p>根据表达式的真假（填写一个布尔值），切换元素的显示和隐藏</p>
+                            <p>这里效果是给该元素添加display:none</p>
+                            <p>5.v-if</p>
+                            <p>根据表达式的真假，切换元素的显示和隐藏(操作dom元素)</p>
+                            <p>v-if是将dom元素动态的添加或删除，表达式为true时，元素存在于dom树中，false就从dom树中移除</p>
+                            <p>频繁的切换使用v-show，反之使用v-if，前者的切换消耗更小</p>
+                            <p>6.v-bind</p>
+                            <p>设置元素的属性（比如：src，title，class）</p>
+                            <p>v-bind:src='imgsrc'</p>
+                            <p>data:{imgsrc:"图片地址"}</p>
+                            <p class="red">它的语法糖是:(前面的v-bind可以省略)</p>
+                            <p>切换class类有两种方法：1.三元表达式 data值？'为真时执行':'为假时执行'</p>
+                            <p>2.对象的方式0{类名：data数值（为真时类名生效）}</p>
+                            <p>需要动态的增删class建议使用对象的方式</p>
+                            <p><b>计数器案例</b></p>
+                            <p><a href="../vue/vue案例-图片切换.html">链接</a></p>
+                            <hr>
+                            <p><b>v-for</b></p>
+                            <p>根据数据生成列表结构</p>
+                            <p>具体写法：v-for="(item,index) in 数组名称"</p>
+                            <p>通常和数组连用，在li标签中添加{{item(这里和上文中的item对应，上文改变这里也要改变，意思为数组的内容)}}</p>
+                            <p>后面的index表示数组的索引号，也可以通过{{}}调用</p>
+                            <p>同样的也可以用来遍历数组</p>
+                            <hr>
+                            <p><b>v-model</b></p>
+                            <p>获取和设置表单元素的值（双向数据绑定：更改两边中的任何一边都会改变另一边的值）</p>
+                            <p>绑定的数据会和表单元素值相关联</p>
+                            <hr>
+                            <p><b>案例</b></p>
+                            <p><a href="../vue/vue本地应用.html">本地应用</a></p>
+                            <p><a href="../vue/vue网络应用.html">网络应用</a></p>
+                            <p><a href="../vue/vue_material-master/综合应用.html">综合应用</a></p>
+
+                        </li>
+                        <!-- 12.1模块 -->
+                    </ul>
+                </div>
+                <!-- 第十二部分 -->
+
+            </div>
+            <!-- page3 -->
+
+            <!-- container -->
+        </div>
+
+        <!-- 主体部分 -->
+        <div class="slider ">返回顶部</div>
+
+        <!-- 页脚部分 -->
+        <footer></footer>
+        <!-- 页脚部分 -->
+
+        <script src="../js/jquery.min.js"></script>
+        <script src="../../bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+        <script src="../js/animation.js"></script>
+        <script src="../js/js学习.js"></script>
+
+</body>
+
+</html>
